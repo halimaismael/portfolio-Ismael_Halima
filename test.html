@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Styling de la deuxième section */
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+
+        .vertical-line {
+            margin-top: 100px; /* Ajout d'une marge en haut */
+            height: 100%; /* Réduction de la hauteur pour compenser la marge */
+            width: 2px;
+            background-color: #000;
+            position: relative;
+            margin: 0 20px;
+        }
+
+        .vertical-line::before,
+        .vertical-line::after,
+        .vertical-line .center-dot {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            border-radius: 50%;
+            left: -4px;
+        }
+
+        .vertical-line::before {
+            top: -15px; /* Position du point en haut */
+        }
+
+        .vertical-line::after {
+            bottom: -5px; /* Position du point en bas */
+        }
+
+        .vertical-line .center-dot {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .top-left-text {
+            position: absolute;
+            top: -50px;
+            left: 350px;
+            font-size: 18px;
+            color: #000;
+        }
+
+        .top-left-text h1 {
+            margin-left: 50px;
+        }
+
+        .bottom-right-text {
+            position: absolute;
+            top: 50%;
+            right: 500px;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #000;
+        }
+
+        .bts {
+            margin-left: 110px;
+        }
+
+        .service {
+            margin-left: -150px;
+        }
+
+        .spe {
+            margin-left: -130px;
+        }
+
+        .suite {
+            margin-left: 30px;
+        }
+
+        .bottom-right-text {
+            margin-top: 150px;
+        }
+
+        .bac {
+            margin-right: 80px;
+        }
+
+        .ecole {
+            margin-right: -5px;
+        }
+
+        .service1 {
+            margin-right: -10px;
+        }
+
+        .suite1 {
+            margin-right: 130px;
+        }
+
+        .bottom-right-text {
+            margin-right: -150px;
+        }
+
+        .bottom-right-text h1 {
+            margin-right: 35px;
+        }
+
+        .scientfq {
+            margin-right: 135px;
+        }
+
+        .bottom-right-text h1,
+        .bottom-right-text p {
+            text-align: right;
+        }
+
+        .bottom-right-image {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .bottom-right-image img {
+            max-width: 100px; /* Adjust the size as needed */
+        }
+
+        .parcours header h1 {
+            font-size: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <section id="parcours" class="parcours">
+        <header>
+            <h1>Parcours Scolaire</h1>
+        </header>
+        <div class="content">
+            <div class="top-left-text">
+                <h1>2023 - 2024</h1><br>
+                <p class="bts">BTS SIO</p><br>
+                <p>Diderot Education, Lyon</p><br>
+                <p class="service">BTS Service Informatique aux Organisations</p><br>
+                <p class="spe">Spécialité SLAM (Solutions Logicielles et<br><br> Applications Métiers)</p>
+            </div>
+            <div class="vertical-line">
+                <div class="center-dot"></div>
+            </div>
+            <div class="bottom-right-text">
+                <h1>2022 - 2023</h1><br>
+                <p class="bac">Baccalauréat</p><br>
+                <p class="ecole">Albert Camus, Comores</p><br>
+                <p class="service1">Baccalauréat Scientifique</p><br>
+                <p class="scientfq">BAC C</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
