@@ -105,6 +105,9 @@ p {
     padding: 5px 10px;
     border: 1px solid black;
 }
+.h1p span {
+    color: cadetblue;
+}
 
 .line-and-text {
     flex: 3;
@@ -115,7 +118,7 @@ p {
 
 .line-and-text hr {
     position: absolute;
-    top: -90px; /* Ajustement de la position du hr */
+    top: -109px; /* Ajustement de la position du hr */
     left: -100px;
     width: calc(120% - 100px);
 }
@@ -140,8 +143,8 @@ footer {
     width: 100%;
 }
 .image{
-    float: right;margin-top: -1315px;
-    height: 550%;
+    float: right;margin-top: -1354px;
+    height: 920%;
 }
 
 footer ul {
@@ -206,12 +209,12 @@ footer ul li a {
         }
 
         .vertical-line {
-            margin-top: 100px; /* Ajout d'une marge en haut */
+            margin-top: -110px; /* Ajout d'une marge en haut */
             height: 100%; /* Réduction de la hauteur pour compenser la marge */
             width: 2px;
             background-color: #000;
             position: relative;
-            margin: 0 20px;
+            margin: 0 60px;
         }
 
         .vertical-line::before,
@@ -384,7 +387,7 @@ footer ul li a {
 
 .image-container img {
     position: absolute; /* Position absolue pour l'image */
-    top: 60%; /* Déplacez l'image au centre vertical du conteneur parent */
+    top: 50%; /* Déplacez l'image au centre vertical du conteneur parent */
     margin-top: -380px; /* Décalez l'image vers le haut de moitié de sa hauteur */
     margin-left: 70px;
     border-radius: 90%;
@@ -427,8 +430,9 @@ footer ul li a {
 }
 
 .card img {
-    width: 50%;
-    border-radius: 50%;
+    height: 300px;
+    width: 90%;
+    border:1px solid black;
     transition: border-radius 0.5s, box-shadow 0.5s;
 }
 
@@ -438,10 +442,11 @@ footer ul li a {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 50%;
+    width: 90%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: white;
+    box-shadow: #fff;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -451,10 +456,11 @@ footer ul li a {
 .card:hover .overlay {
     opacity: 1;
     border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 }
 
 .text {
-    color: white;
+    color: black;
     font-size: 1.1rem;
     text-align: center;
 }
@@ -502,9 +508,11 @@ footer ul li a {
             height: 250px;
         }
         .projects-grid .project-item:hover {
-            background-color: black;
-        }
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ajoute une ombre lorsque survolé */
+        background-color: white; /* Facultatif : change la couleur de l'arrière-plan */
+}
         .projects-grid .project-item:hover .overlay {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             opacity: 1;
         }
         .overlay {
@@ -513,17 +521,31 @@ footer ul li a {
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ajoute une ombre lorsque survolé */
+             background-color: white; 
             display: flex;
             justify-content: center;
             align-items: center;
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-        .overlay p {
-            color: white;
+        .project-item .overlay p {
+            color: black;
             font-size: 1.6rem;
         }
+        .overlay .see-more {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid black;
+    margin-top: 10px; /* Ajoute une marge au-dessus du lien */
+}
+
+.overlay .see-more:hover {
+    background-color: black;
+    color: white;
+}
+
         .main-section {
             text-align: center;
             padding: 50px 0;
@@ -559,7 +581,7 @@ footer ul li a {
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">Parcours Scolaire</a></li>
                 <li><a href="#">Compétences</a></li>
-                <li><a href="nvx_projet.html">Projets</a></li>
+                <li><a href="tout_projet.html">Projets</a></li>
                 <li><a href="nvx_contact.html">Contacts</a></li>
             </ul>
         </nav>
@@ -637,42 +659,98 @@ footer ul li a {
         <main>
             <div class="row">
                 <div class="card">
-                    <img src="web.jpg" alt="Compétences Techniques">
+                    <img src="html.jpg" alt="Compétences Techniques">
                     <div class="overlay">
-                        <div class="text">Python, Java, C++, C#, </div>
+                        <div class="text">HTML</div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="sql4.png" alt="Compétences Non Techniques">
+                    <img src="css.png" alt="Compétences Non Techniques">
                     <div class="overlay">
-                        <div class="text">MYSQL</div>
+                        <div class="text">CSS</div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="frame.png" alt="Certifications">
+                    <img src="js.png" alt="Certifications">
                     <div class="overlay">
-                        <div class="text">Outil : Bootstrap,Git</div>
+                        <div class="text">JavaScript </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="card">
-                    <img src="rsx.jpg" alt="Outils">
+                    <img src="python.png" alt="Outils">
+                    <div class="overlay">
+                        <div class="text">python</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="java.jpg" alt="Méthodologies">
+                    <div class="overlay">
+                        <div class="text">Java</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="C++.jpg" alt="Expérience">
+                    <div class="overlay">
+                        <div class="text">C++</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <img src="cs.jpg" alt="Outils">
+                    <div class="overlay">
+                        <div class="text">C#</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="php1.jpg" alt="Méthodologies">
+                    <div class="overlay">
+                        <div class="text">PHP</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="SQL--.jpeg" alt="Expérience">
+                    <div class="overlay">
+                        <div class="text">MYSQL</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <img src="git.png" alt="Outils">
+                    <div class="overlay">
+                        <div class="text">Git </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="boostrap.png" alt="Méthodologies">
+                    <div class="overlay">
+                        <div class="text">Bootstrap</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="box.png" alt="Expérience">
                     <div class="overlay">
                         <div class="text">Virtualisation, VirtualBox</div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="card">
-                    <img src="ordi.png" alt="Méthodologies">
+                    <img src="cmdwindows.png" alt="Outils">
                     <div class="overlay">
-                        <div class="text">HTML, CSS, Js, PHP, </div>
+                        <div class="text">Windows</div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="os.png" alt="Expérience">
+                    <img src="languageR.png" alt="Méthodologies">
                     <div class="overlay">
-                        <div class="text">Linux, Windows</div>
+                        <div class="text">Language R</div>
                     </div>
+                </div>
+                
                 </div>
             </div>
         </main>
@@ -690,30 +768,36 @@ footer ul li a {
         <div class="projects-grid">
             <div class="project-item">
                 <img src="pro1.png" alt="Project 1">
-                <div class="overlay"><p>Texte du projet 1</p></div>
+                <div class="overlay"><p>ParfumDesComores</p></div>
+                <a href="#" class="see-more">Voir Plus</a>
             </div>
             <div class="project-item">
                 <img src="pro2.png" alt="Project 2">
-                <div class="overlay"><p>Texte du projet 2</p></div>
+                <div class="overlay"><p>SoftMarket</p></div>
+                <a href="#" class="see-more">Voir Plus</a>
             </div>
             <div class="project-item">
                 <img src="pro3.png" alt="Project 3">
-                <div class="overlay"><p>Soleil de minuit</p></div>
+                <div class="overlay"><p>VersLibre</p></div>
+                <a href="#" class="see-more">Voir Plus</a>
             </div>
         </div>
         <br><br>
         <div class="projects-grid">
             <div class="project-item">
                 <img src="pro5.png" alt="Project 4">
-                <div class="overlay"><p>Texte du projet 4</p></div>
+                <div class="overlay"><p>ParolesRéfléchies</p></div>
+                <a href="#" class="see-more">Voir Plus</a>
             </div>
             <div class="project-item">
                 <img src="pro6.png" alt="Project 5">
                 <div class="overlay"><p>Vente en ligne</p></div>
+                <a href="#" class="see-more">Voir Plus</a>
             </div>
             <div class="project-item">
                 <img src="pro7.png" alt="Project 6">
                 <div class="overlay"><p>My futur company</p></div>
+                <a href="#" class="see-more">Voir Plus</a>
             </div>
         </div>
     </section>
@@ -725,9 +809,9 @@ footer ul li a {
     <footer>
         <ul>
             <li><a href="test.html"><ion-icon name="school-outline" style="font-size: 30px;"></ion-icon></a></li>
-            <li><a href="competancenvx-prtfl.html"><ion-icon name="library-outline" style="font-size: 30px;"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="library-outline" style="font-size: 30px;"></ion-icon></a></li>
             <li><a href="#"><ion-icon name="desktop-outline" style="font-size: 30px;"></ion-icon></a></li>
-            <li><a href="nvx_projet.html"><ion-icon name="business-outline" style="font-size: 30px;"></ion-icon></a></li>
+            <li><a href="tout_projet.html"><ion-icon name="business-outline" style="font-size: 30px;"></ion-icon></a></li>
         </ul>
     </footer>
     <script src="script.js"></script>
