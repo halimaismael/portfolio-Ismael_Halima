@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .left-image {
+            flex: 1;
+        }
+
+        .left-image img {
+            width: 80%;
+            height: auto;
+            float: left;
+        }
+
+        .right-images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-row, .bottom-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            width: 30%;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 80%;
+            height: auto;
+            border:1px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Compétence</h1>
+        <div class="main-content">
+            <div class="left-image">
+                <img src="aprpr.jpeg" alt="Main Image">
+            </div>
+            <div class="right-images">
+                <div class="top-row">
+
+                    <div class="image-container">
+                        <img src="web.jpg" alt="HTML - CSS">
+                        <p>HTML - CSS - javascript </p>
+                    </div>
+                    <div class="image-container">
+                        <img src="sql4.png" alt="JavaScript">
+                        <p>MySQL</p>
+                    </div>
+                    
+                    <div class="image-container">
+                        <img src="poo.jpg" alt="PHP">
+                        <p>Python - Java - C++ - C# - PHP </p>
+                    </div>
+                </div>
+                <div class="bottom-row">
+                    <div class="image-container">
+                        <img src="frame.png" alt="SQL">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="rsx.jpg" alt="Python">
+                        <p>Routage</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="git.jpg" alt="Node.js">
+                        <p>GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
