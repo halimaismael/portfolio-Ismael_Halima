@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .text {
+            width: 50%; /* Moitié droite de l'écran */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text-content {
+            max-width: 600px;
+            text-align: left;
+            color: #000;
+        }
+
+        .text-content p {
+            font-style: italic;
+        }
+
+        .vers1 {
+            color: antiquewhite;
+            font-style: italic;
+            text-align: center;
+        }
+        .image {
+            margin-right: -10px;
+            width: 80%; /* Moitié gauche de l'écran */
+            background-image: url(vie2.png);
+            background-size: cover;
+            background-position: center;
+            border-right: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="nvx_poeme.html">Accueil</a></li>
+                <li><a href="apropos_poeme.html">À propos</a></li>
+                <li><a href="nvx_poeme.html"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+                <li><a href="#">Catégorie</a></li>
+                <li><a href="#accueil"><ion-icon name="search-outline" style="font-size: 30px;"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="image"></div>
+        <div class="text">
+            <div class="text-content">
+                <div class="vers1">
+                    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                </div>
+                <h1>L'Absence qui Résonne</h1>
+                <p>Dans le silence de mes nuits, l'absence résonne,</p>
+                <p>Un vide qui s'installe, où mon cœur s'abandonne.</p>
+                <p>Je suis la feuille morte, loin de l'arbre qui donne,</p>
+                <p>Enviant ceux bercés dans les bras qui étonnent.</p>
+                <br><br>
+                <p>Loin de mes anges gardiens, face à la froideur monotone,</p>
+                <p>D'une gardienne de marbre, son souffle assomme.</p>
+                <p>Leur manque m'envahit, plus tranchant que l'automne,</p>
+                <p>Je me tiens à bout, mais la défaite, je ne la nomme.</p>
+                <br><br>
+                <p>Dans le miroir de la nuit, leurs visages fantômes,</p>
+                <p>Me rappellent qu'ils sont là, dans chaque atome.</p>
+                <p>Je travaille, je lutte, même quand la concentration s'évapore,</p>
+                <p>Car dans mon cœur, leur amour est le trésor que je garde.</p>
+                <br><br>
+                <p>Parfois, je me dis c'est un cauchemar, cette absence,</p>
+                <p>Que je me réveillerai à leurs côtés, en pleine présence.</p>
+                <p>Mais la réalité me rattrape, avec insistance,</p>
+                <p>Je sais qu'ils sont avec moi, malgré la distance.</p>
+                <br><br>
+                <p>Je poursuis, car un jour, je veux leur montrer,</p>
+                <p>Que leur enfant a grandi, fort et déterminé.</p>
+                <p>Dans le silence de la nuit, je continue à espérer,</p>
+                <p>Que l'avenir sera doux, et nos cœurs, à nouveau liés.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

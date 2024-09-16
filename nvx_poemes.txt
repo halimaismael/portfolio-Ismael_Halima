@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+        .fond {
+            background-image: url(fond15.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .content-left {
+            padding: 20px;
+            width: 45%;
+        }
+
+        .content-right {
+            width: 45%;
+            display: flex;
+            float: right;
+            margin-left: 940px;
+        }
+
+        .content-right img {
+            max-width: 60%;
+            height: auto;
+            border:1px solid white;
+            margin-top: -480px;
+            z-index: 1;
+            height: 500px;
+            float: right;
+        }
+        .image_right img {
+            margin-left: 550px;
+        }
+        .gauche_droite {
+            background-color: antiquewhite;
+            margin-top: 50px;
+            width: 100%;
+        }
+        .gauche_droite p{
+            margin-left: 100px;
+        }
+        .gauche_droite  h1{
+            margin-left: 300px;
+            color: burlywood;
+            font-style: italic;
+        }
+        .centered-text {
+            text-align: center;
+            margin-top: -100px;
+        }
+
+        .select-container {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .select-container select {
+            border: 1px solid #000; /* Applique une bordure simple */
+            background-color: transparent; /* Enlève la couleur de fond par défaut */
+            /*appearance: none; /* Enlève l'apparence par défaut */
+            padding: 10px;
+            width: 700px;
+            margin-left: -600px;
+            font-size: 16px;
+        }
+
+        .select-container optgroup {
+            border: 1px solid #000; /* Applique une bordure simple */
+            background-color: transparent; /* Enlève la couleur de fond par défaut */
+            font-size: 25px;
+        }
+        .bordered {
+            background-color: azure;
+        }
+        .contact {
+            background-image: url(image_bas1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 450px;
+
+        }
+        .contact p{
+            font-size: 25px;
+            font-style: italic;
+            margin-left: 100px;
+        }
+
+        .contact{
+            margin-top: 50px;
+        }
+        .btn-submt a {
+            border: 1px solid black;
+            padding: 5px 10px;
+            margin-left: 1500;
+            font-size: 20px;
+            font-style: italic;
+        }
+        .btn-submt {
+            margin-left: 1200px;
+            margin-top: -50px;
+        }
+        .image_  {
+            text-align: center;
+            color: antiquewhite;
+            background-color: rgba(128, 128, 128, 0.5);   
+        }
+        .question-container {
+            border: 1px solid #000;
+            width: 750px;
+            padding: 10px;
+            margin: 10px 0;
+            margin-left: 150px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .question-container p {
+            margin: 0;
+        }
+
+        .question-container .toggle-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .response {
+            display: none;
+            margin-top: 50px;
+            font-size: 16px;
+            color: #000;
+            padding: 20px 25px;
+        }
+    </style>
+</head>
+<body>
+    <section class="fond">
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="nvx_poeme.html">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="contact_poeme.html">Contact</a></li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+    </header>
+    
+        <h1 class="title" style="text-align: center; color: aliceblue; font-size: 48px; font-style: italic;">A propos</h1>
+        <br><br><br><br><br><br><br><br>
+    </section>
+    <div class="gauche_droite">
+        <div class="content-left">
+                <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                <p>À l'aube de ma maturité, je me lance dans l'aventure, je trace ma propre structure.<br>Dans les méandres de mon esprit, une encre noire s'éveille,<br>Sur ce site de poèmes, je libère ce qui sommeille.</p>
+            <p>Ce n'est pas juste un passe-temps, c'est une quête, un besoin,<br>Chaque vers, chaque rime, allège mon cœur de son poids.<br></p>
+            <p>Chaque sonnet est un refuge, chaque strophe une armure,<br>Face aux tourments de l'âme, c'est ma seule parure.<br>Les rimes tissent des liens, des ponts vers l'infini,<br>Où mon esprit vagabonde, libre et sans répit.</p>
+            <p>Au creux de chaque verbe, je déniche des trésors,<br>Une symphonie d'émotions, un apaisant accord.<br>Les métaphores chantent, les allitérations dansent,<br>Et mon cœur en éveil, s'embrase de leur cadence.</p>
+            </div>
+            
+    </div>
+    <div class="content-right">
+        <img src="meee.png" alt="Image description">
+    </div>
+    <div class="image_right">
+        <img src="plume.png">
+    </div>
+    <div class="centered-text">
+        <p>Questions fréquemment posées</p>
+        <h2>FAQ</h2>
+    </div>
+    <!---<section class="bordered"></section>
+    <div class="select-container">
+        <select>
+            <optgroup label="Catégorie 1">
+                <option>Pourquoi avez-vous décidé de publier vos poèmes en ligne ?</option>
+                <option>Option 1.2</option>
+            </optgroup>
+            <optgroup label="Catégorie 2">
+                <option>Option 2.1</option>
+                <option>Option 2.2</option>
+            </optgroup>
+        </select>
+    </div>
+    
+    <div class="select-container">
+        <select>
+            <optgroup label="Catégorie 3">
+                <option>Comment l'écriture de poèmes vous aide-t-elle à vous sentir mieux ?</option>
+                <option>Option 3.2</option>
+            </optgroup>
+            <optgroup label="Catégorie 4">
+                <option>Option 4.1</option>
+                <option>Option 4.2</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div class="select-container">
+        <select>
+            <optgroup label="Catégorie 3">
+                <option>Quelle est votre principale inspiration pour écrire des poèmes ?</option>
+                <option>Option 3.2</option>
+            </optgroup>
+            <optgroup label="Catégorie 4">
+                <option>Option 4.1</option>
+                <option>Option 4.2</option>
+            </optgroup>
+        </select>
+        </div>
+        <div class="select-container">
+            <select>
+                <optgroup label="Catégorie 3">
+                    <option>Avez-vous des conseils pour quelqu'un qui souhaite commencer à écrire des poèmes ?</option>
+                    <option>Option 3.2</option>
+                </optgroup>
+                <optgroup label="Catégorie 4">
+                    <option>Option 4.1</option>
+                    <option>Option 4.2</option>
+                </optgroup>
+            </select>
+    </div>
+    <div class="select-container">
+        <select>
+            <optgroup label="Catégorie 3">
+                <option>Quel est le processus que vous suivez pour écrire un poème ?</option>
+                <option>Option 3.2</option>
+            </optgroup>
+            <optgroup label="Catégorie 4">
+                <option>Option 4.1</option>
+                <option>Option 4.2</option>
+            </optgroup>
+        </select>
+</div>--><div class="question-container">
+    <p>Pourquoi avez-vous décidé de publier vos poèmes en ligne ?</p>
+    <span class="toggle-icon" onclick="toggleResponse(this)">&#x25BC;</span>
+    <p class="response">En somme, la décision de publier mes poèmes en ligne est une démarche qui m'aide à transformer mes peines en une force créative, à trouver une communauté de soutien, et à laisser une empreinte de mon passage dans ce monde, même si mes parents ne sont pas à mes côtés pour en être témoins.</p>
+</div>
+<div class="question-container">
+    <p>Comment l'écriture de poèmes vous aide-t-elle à vous sentir mieux ?</p>
+    <span class="toggle-icon" onclick="toggleResponse(this)">&#x25BC;</span>
+    <p class="response">L'écriture de poèmes m'aide à exprimer et comprendre mes émotions, créant un espace sûr et intime pour la réflexion et la guérison. Cela donne un sens à mes expériences, transformant la douleur en beauté et m'apportant un sentiment d'accomplissement. En partageant mes poèmes, je crée des connexions et réduis mon isolement. L'acte d'écrire offre aussi une évasion mentale et renforce ma résilience.</p>
+</div>
+<div class="question-container">
+    <p>Quelle est votre principale inspiration pour écrire des poèmes ?</p>
+    <span class="toggle-icon" onclick="toggleResponse(this)">&#x25BC;</span>
+    <p class="response">Ma principale inspiration pour écrire des poèmes vient des émotions profondes que je ressens, des expériences personnelles, et des moments de solitude. Étant loin de mes parents et encore très jeune, l'écriture me permet de canaliser ma tristesse, mes espoirs et mes rêves, transformant ainsi ma douleur en art et trouvant du réconfort dans les mots.</p>
+</div>
+<div class="question-container">
+    <p>Avez-vous des conseils pour quelqu'un qui souhaite commencer à écrire des poèmes ? </p>
+    <span class="toggle-icon" onclick="toggleResponse(this)">&#x25BC;</span>
+    <p class="response">Oui, voici quelques conseils pour écrire des poèmes personnels :<br>
+
+         --Soyez authentique : Écrivez sur vos émotions et expériences réelles.<br>
+         --Lisez beaucoup : Inspirez-vous de divers styles et poètes.<br>
+         -- régulièrement : Écrivez souvent pour améliorer votre style.</p>
+</div>
+<div class="question-container">
+    <p>Quel est le processus que vous suivez pour écrire un poème ? </p>
+    <span class="toggle-icon" onclick="toggleResponse(this)">&#x25BC;</span>
+    <p class="response">Pour écrire un poème, je commence par choisir un thème ou une émotion forte. Ensuite, je note des mots et des phrases qui me viennent à l'esprit. Puis, je structure ces idées en vers et strophes, en jouant avec les rimes et les rythmes pour donner vie à mes sentiments.</p>
+</div>
+<div class="contact">
+    <p>Envoyez-moi vos messages pour discuter de mes poèmes <br>ou partager vos réflexions avec moi !</p>
+
+    <br><br><br><br>
+
+    <div class="btn-submt">
+        <a href="nvx_contact_poeme.html">Me contacter</a>
+    </div>
+    <br><br><br><br>
+</div>
+<div class="image_">
+    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+</div>
+    <script>
+        function toggleResponse(icon) {
+            const response = icon.nextElementSibling;
+            if (response.style.display === 'block') {
+                response.style.display = 'none';
+                icon.innerHTML = '&#x25BC;'; // Down arrow
+            } else {
+                response.style.display = 'block';
+                icon.innerHTML = '&#x25B2;'; // Up arrow
+            }
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

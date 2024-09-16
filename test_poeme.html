@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /*background-image: url(poemee.png);
+            background-size: cover;*/
+        }
+        .fond {
+            background-image: url(image_fond.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            width: 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        main p, main h1 {
+            margin-top: 50px;
+        }
+        main p {
+            font-style: italic;
+            font-size: 20px;
+        }
+        main h1 {
+            margin-top: 50px;
+            font-size: 2em;
+            opacity: 0;
+            animation: fadeIn 2s forwards, moveIn 2s forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes moveIn {
+            from {
+                transform: scale(0.5);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .footer-link {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: #000;
+        }
+        /*.image img{
+        width: 1540px;
+        }*/
+        .vers{
+            color: antiquewhite;
+            font-style: italic;
+        }
+        .bottom-paragraph {
+            position: absolute;
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            width: 100%;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 20px;
+            color: #000;
+            font-style: oblique;
+            margin-top: 0px;
+        }
+        .bottom-paragraph p {
+            margin: 30px;
+        }
+        .imge img{
+            background-color: palevioletred;
+            border: 1px solid black;
+            float: right;
+            width: 550px;
+            margin-top: 250px;
+            margin-right: 50px;
+        }.bottom{
+            margin-top: 350px;
+            margin-left: 250px;
+        }
+        .bottom a {
+            align-items: center;
+            padding: 5px 20px;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #000;
+            font-size: 18px;
+            transition: 0.3s;
+            display: inline-block;
+            
+        }
+        .bottom h2{
+            margin-top: 50px;
+            margin-left: 250px ;
+        }
+
+        .buttons a:hover {
+            background-color: #1e90ff;
+            color: #000;
+        }
+
+
+
+        .buttons button:hover {
+            background-color: #1e90ff; /* Bleu de mer */
+            color: #000;
+        }
+        #text1{
+            margin-left: 30px;
+            font-style: italic;
+        }
+        #text{
+        margin-left: 30px;
+        text-decoration: none;
+        font-style: italic;
+        }
+        #titre2{
+            margin-left: 30px;
+            text-decoration: none;
+            font-style: italic;
+        }
+        #titre3{
+            margin-left: 30px;
+            text-decoration: none;
+            font-style: italic;
+            
+        }
+
+        #titre3 a {
+            text-decoration: none;
+        }
+        #titre2 a {
+            text-decoration: none;
+            border: 1px solid #000;
+            padding: 5px 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        #titre2 a:hover {
+        background-color: #1e90ff;
+        color: #000;
+    }
+        #text a {
+            text-decoration: none;
+        }
+
+        #img{
+            width: 400px;
+            float: right;
+            margin-left: 200px;
+            border-radius: 60px;
+            /*border-radius: 200px;*/
+        }
+        .bottom-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            /*background-color: burlywood;*/
+        }
+
+        .bottom-section img {
+            width: 450px;
+            /*height: 700px;
+            height: auto;*/
+            /*border: 2px solid #000;*/
+            border-radius: 2px ;
+            margin: 0 50px;
+        }
+
+        .bottom-section .center-text {
+            flex: 1;
+            text-align: center;
+            font-style: italic;
+        }
+        .textcenter h2{
+            text-align: center;
+            font-style: italic;
+        }
+        .center__ p{
+            margin-left: 70px;
+            font-size:16px ;
+            font-style: italic;
+        }
+        .center__ img{
+            width: 450px;
+            border-radius: 2px ;
+            margin: 0 50px;
+            margin-left: 950px;
+            float: right;
+            margin-right: 2px;
+            margin-top: -350px;
+        }
+        #dynamic-text{
+            font-style: italic;
+            margin-left: 70px;
+            margin-top: -35px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .bas h1{
+            text-align: center;
+        }
+        .leh1{
+            text-align: center;
+            margin-left: 150px;
+            font-style: italic;
+        }
+        .bas  p{
+            margin-left: 100px;
+            font-style: italic;
+        }
+        .bas img{
+            margin-left: 150px;
+            float: right;
+            margin-top: -500px
+        }
+        footer p {
+            font-style: italic;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .imge {
+            transform: translateX(100%);
+            animation: slideImage 1s forwards;
+        }
+
+        .bottom {
+            transform: translateX(-100%);
+            animation: slideText 1s forwards;
+        }
+
+        @keyframes slideImage {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideText {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .image_poeme {
+            background-color:#ffcccb;
+        }
+        .bordered {
+            border: 1px solid #000; /* Couleur de la bordure noire */
+            padding: 10px; /* Espacement intérieur pour un meilleur aspect */
+        }
+        table:nth-child(2) {
+            margin-top: 50px; 
+        }
+        .bordered1 {
+            border: 1px solid #000;
+            padding: 10px; 
+            margin-top: 150px;
+        }
+        .bordered2 {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="fond">
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px; "></ion-icon></h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Accueil</li>
+                <li><a href="nvx-apropos_poeme.html">À propos</a></li>
+                <li><a href="mes_poemes.html">Mes Créations</a></li>
+                <li><a href="nvx_contact_poeme.html">Contact</a></li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Prenez la plume, laissez-la glisser <ion-icon name="pencil" style="font-size: 30px; "></ion-icon></p>
+        <h1>Rends tes pensées étoiles et laisse-les danser sur le papier.</h1>
+        <h2><ion-icon name="fitness-outline" style="font-size: 48px; "></ion-icon></h2>
+        <a href="#" class="footer-link">Découvrir plus</a>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+</section>
+    <div class="bottom-paragraph">
+        <p><ion-icon name="partly-sunny-outline" style="font-size: 48px; color: bisque;"></ion-icon> “Éveille l'encre endormie, rends tes pensées étoiles et laisse-les danser sur le papier, <br>en une valse de mots qui libère l'âme et éclaire les esprits“</p>
+    </div>
+    <div class="imge">
+        <img src="poemefond.png" alt="moi">
+    </div>
+    <div class="bottom">
+        <h2>VersLibérés <ion-icon name="moon" style="font-size: 48px; "></ion-icon></h2>
+        <h1>Exprimez Votre Univers Intérieur</h1>
+        <p>Que vos mots soient les pinceaux avec lesquels vous peignez vos sentiments, <br>ou que vos dessins soient les vers qui racontent vos histoires sans fin,</p>
+        <p>chaque création est un cadeau précieux. Ici, chaque pensée prend vie, chaque émotion trouve sa voix.</p>
+        <br>
+        <p><ion-icon name="heart-circle" style="font-size: 48px; "></ion-icon></p>
+        <a href="#">En savoir plus</a>
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<section class="image_poeme">
+
+    <table>
+        <tr>
+            <td class="bordered">
+                <h2 id="text1">Le Ballet des Espoirs Lointains</h2>
+                <p id="text">Au cœur de l'horizon où s'éveille l'aurore,</p>
+                <p id="text">La vie m'appelle au loin, vers des terres d'espoir,</p>
+                <p id="text">Mais derrière moi un océan si noir,</p>
+                <p id="text">où le sel de mes larmes se mêle à l'onde sonore.</p>
+                <br><br>
+                <p id="text">Des milliers de kilomètres, un adieu sans voir,</p>
+                <p id="text">Les bras de mes parents, un souvenir qui s'évapore,</p>
+                <p id="text">Dans ce monde inconnu, je cherche la belle aurore,</p>
+                <p id="text">Sous le regard des étoiles, mon cœur garde espoir.</p>
+                <br><br>
+                <!--<p id="text">Oncles et tantes, telles des ombres éphémères,</p>
+                <p id="text">Ne voient pas l'enfant perdu, l'âme solitaire,</p>
+                <p id="text">Dans le jardin de l'oubli, je cueille ma peine,</p>
+                <p id="text">Et la lune, témoin silencieux, entend ma rengaine.</p>
+                <br><br>
+                <p id="text">La séparation, un fil ténu qui se dérobe,</p>
+                <p id="text">Tisse la toile de ma quête, loin de la robe</p>
+                <p id="text">Maternelle, où chaque pli était une caresse,</p>
+                <p id="text">Maintenant, chaque pas est un acte de tendresse.</p>
+                <br><br>
+                <p id="text">Chercher la belle, dans l'écrin d'un monde austère,</p>
+                <p id="text">Où les cœurs se ferment, où l'amour est étranger,</p>
+                <p id="text">C'est danser seul, sous la pluie, un ballet éphémère,</p>
+                <p id="text">Mais l'espoir, tel un phare, guide mon long voyage.</p>-->
+                <p id="titre2"><a href="...">Voir plus...</a></p>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+            <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td class="bordered1">
+                <h2 id="titre2">Les Reflets du Labyrinthe</h2>
+                <p id="titre2">À l'intersection des destins, quatre sentiers se dévoilent,</p>
+                <p id="titre2">Chacun tissé d'espoirs, scintillant comme des étoiles.</p>
+                <p id="titre2">Des voix s'élancent, m'invitant à leur danse sacrée,</p>
+                <p id="titre2">Dans ce ballet des destins, mon cœur est ébranlé.</p>
+                <br><br>
+                <p id="titre2">Les premiers chuchotements, tels des papillons nocturnes,</p>
+                <p id="titre2">Ceux de mes Compagnons de toujours, me parlant à l'ombre des urnes.</p>
+                <p id="titre2">Un autre cercle, bras ouverts, m'offre un futur radieux,</p>
+                <p id="titre2">Où des visages connus dessinent un lendemain précieux.</p>
+                <br><br>
+                <!--<p id="titre2">Trois confréries, trois serments, convoitant mon essence,</p>
+                <p id="titre2">Chacun me voyant tel l'architecte de leur renaissance.</p>
+                <p id="titre2">Mais choisir, c'est tracer un sillon dans l'éther,</p>
+                <p id="titre2">Et dans chaque conclave, des souvenirs à l'ancre de fer.</p>
+                <br><br>
+                <p id="titre2">Émue, couronnée, objet de toutes les convoitises,</p>
+                <p id="titre2">Mon esprit balance sous le poids de ces entreprises.</p>
+                <p id="titre2">Car choisir, c'est composer une symphonie de clair-obscur,</p>
+                <p id="titre2">Abandonner des chimères, dans le silence de l'azur.</p>
+                <br><br>
+                <p id="titre2">La clairvoyance de cette saga, tissée de passion et de peine,</p>
+                <p id="titre2">Révèle que chaque choix est un fil dans la trame sereine.</p>
+                <p id="titre2">Séduire le cosmos est un vœu pieux, une valse infinie,</p>
+                <p id="titre2">Mais l'authenticité de l'âme est la plus belle mélodie.</p>-->
+                <p id="titre2"><a href="...">Voir plus...</a></p>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+            <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+
+            <td class="bordered2"> 
+                <h2 id="titre3">Échos d'un Jardin Secret</h2>
+                <p id="titre3">Loin de l'olivier ancestral, je m'épanouis, rameau indépendant,</p>
+                <p id="titre3">Dans un verger inconnu, loin de toi, mon guide bienveillant.</p>
+                <p id="titre3">Le cœur du patriarche, jadis un puits de générosité,</p>
+                <p id="titre3">Fut érodé par l'ingratitude, un automne de froideur glacée.</p>
+                <br><br>
+                <p id="titre3">Il a offert des gerbes d'affection, moissonné le silence,</p>
+                <p id="titre3">Je suis pourtant le bourgeon de l'espérance, le fruit de sa résilience.</p>
+                <p id="titre3">Je peins les jours en nuits, les lucioles pour seules lumières,</p>
+                <p id="titre3">Mais chaque aurore est un dessein, dans le grand livre du destin.</p>
+                <br><br>
+                <!--<p id="titre3">Gardien, je serai le forgeron qui soudera chaque crevasse,</p>
+                <p id="titre3">Dissipant les afflictions, élevant le monument de ton héritage.</p>
+                <p id="titre3">Je te couronnerai en héros, le plus vaillant des veilleurs,</p>
+                <p id="titre3">Dans la fresque de notre saga, tu seras mon phare, mon honneur.</p>
+                <br><br>
+                <p id="titre3">Veilleuse, sentinelle des rêves, dans ton veille silencieuse, je prospère,</p>
+                <p id="titre3">Essence de tes espoirs, celle que tu as chérie en secret.</p>
+                <p id="titre3">Je deviendrai le miroir de tes souhaits, le vitrail de ton amour,</p>
+                <p id="titre3">Dans la galerie de ton cœur, la pièce maîtresse de ton âme.</p>
+                <br><br>
+                <p id="titre3">Gardienne des cœurs, tu as donné sans jamais faillir,</p>
+                <p id="titre3">Pensant qu'en retour, l'affection viendrait fleurir.</p>
+                <p id="titre3">Pourtant, face à l'ingratitude, ton jardin s'est assombri,</p>
+                <p id="titre3">Je serai la rosée du matin, celle qui ravive ton prairie.</p>--->
+                <p id="titre2"><a href="...">Voir plus...</a></p>
+            </td>
+            <!--<td>
+                <img id="img" src="logo1.png" alt="logo Alicia">
+            </td>-->
+        </tr>
+        </table>
+    </section>
+        <br><br><br>
+        <div class="textcenter">
+            <h2>VersLibérés <ion-icon name="moon" style="font-size: 48px; "></ion-icon></h2>
+        </div>
+    <div class="bottom-section">
+        <img src="colombe.png" alt="Image gauche">
+        <div class="center-text">
+            <p>L'art de coucher sur le papier les pensées qui nous traversent l'esprit est un voyage intime et révélateur. <br><br>Chaque mot choisi est une touche de couleur sur la toile de notre conscience,<br> chaque phrase une nuance qui donne vie à nos réflexions les plus profondes. <br><br>Écrire, c'est peindre l'invisible, c'est révéler les contours de notre âme avec une honnêteté brute et une beauté sans pareille.</p>
+            <p>Je vous invite à saisir le pinceau des mots, <br>à tremper dans l'encre de vos émotions et à laisser votre cœur guider votre main. </p>
+            <br>
+            <p>Dans le silence de l'écriture résonne la voix de votre âme. </p>
+            <br><br>
+            <p>Écrivez, non pas pour être lu, mais pour être compris <br><ion-icon name="leaf" style="font-size: 30px; "></ion-icon> par vous-même et par l'univers.</p>
+        </div>
+        <img src="plume.png" alt="Image droite">
+    </div>
+    <br><br><br><br><br><br>
+    <div class="center__">
+        <p>Je vous invite à saisir le pinceau des mots, à tremper dans l'encre de vos émotions et à laisser votre cœur guider votre main. <br><br>Que vos pensées se déversent librement, sans jugement,<br> car chaque mot est un pas vers la compréhension de soi et du monde qui nous entoure. <br>Laissez votre esprit danser sur le rythme des phrases, et peut-être, dans ce miroir de papier, <br>découvrirez-vous un portrait de vous-même que vous n'aviez jamais contemplé auparavant.</p>
+        <p>Prenez la plume ou le clavier,</p>
+        <p>Laissez votre esprit s'envoler.</p>
+        <p>N'ayez crainte de la page blanche.</p>
+        <br><br>
+        <img src="nvx1.jpeg">
+    </div>
+    <div class="leftContent">
+        <h2 id="dynamic-text"> Osez la plume, osez le rêve,  <ion-icon name="heart-half-outline"></ion-icon></h2>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="bas">
+        <h1 class="leh1"> <ion-icon name="heart-outline"  style="font-size: 30px; "></ion-icon> Laisser votre esprit vagabonder sur le papier</h1>
+        <br>
+        <p>N'hésitez pas à laisser votre esprit vagabonder sur le papier.<br> Écrivez vos poèmes, dessinez vos rêves, et laissez-nous voyager dans les paysages de votre âme. <br>Car dans l'art, il n'y a pas de frontières, seulement des horizons à explorer.</p>
+        <p>Rejoignez notre communauté de cœurs et d'esprits partageant la même passion. <br>Ensemble, tissons une tapestrie de mots et d'images, un hommage à la beauté de l'expression humaine.</p>
+        <br><br><br><br>
+        <p><ion-icon name="mail-open-outline" style="font-size: 30px; "></ion-icon>  moinahalima2023@gmail.com</p>
+        <p><ion-icon name="call-outline" style="font-size: 30px; "></ion-icon>  06 41 89 61 11 </p>
+        <p><ion-icon name="location-outline" style="font-size: 30px; "></ion-icon>  Lyon</p>
+        <img src="bas1.jpeg">
+    </div>
+    <footer>
+        <p>Maliha Elisam</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const dynamicText = document.getElementById('dynamic-text');
+        const texts = ["Laissez parler votre cœur sans trêve.", "Chaque mot est un pas vers l'avant,"," Une trace de soi, éternellement vivant."," Que vos pensées deviennent des cris,", "Des murmures, des chants, des écrits. ","Prenez le risque de vous dévoiler,","De vos mots, faites des clés.","Ouvrez les portes de l'imaginaire,","Prenez la plume, et commencez à tracer."];
+        let index = 0;
+
+        function changeText() {
+            dynamicText.classList.remove('erasing'); // Supprime la classe "erasing"
+            dynamicText.textContent = texts[index];
+            index = (index + 1) % texts.length;
+            setTimeout(eraseText, 3000); // Lance la fonction eraseText après 3 secondes
+        }
+
+        function eraseText() {
+            dynamicText.classList.add('erasing'); // Ajoute la classe "erasing"
+        }
+
+        setInterval(changeText, 5000);
+
+       /* window.onload = function() {
+        alert("Page en cours de création.................");
+    }*/
+    </script>
+</body>
+</html>

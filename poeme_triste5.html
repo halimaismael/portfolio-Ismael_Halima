@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: url(reflet2.png); 
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .text {
+            /*width: 50%; /* Moitié gauche de l'écran */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*background: #f0f0f0; /* Couleur de fond claire pour le texte */
+        }
+
+        .text-content {
+            max-width: 600px;
+            margin-left: 750px;
+            color: #000;
+        }
+        .text-content p {
+            font-style: italic;
+        }
+        .vers1 {
+            color: antiquewhite;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .image {
+            /*margin-left: 150px;
+            width: 30%; /* Moitié droite de l'écran */
+            /*background-image: url(reflet_bris.png); 
+            background-size: cover;
+            background-position: center;
+            /*border-left: 2px solid black; /* Bordure gauche */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+                <ul>
+                    <li><a href="nvx_poeme.html">Accueil</a></li>
+                    <li><a href="apropos_poeme.html">À propos</a></li>
+                    <li><a href="nvx_poeme.html"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+                    <li><a href="#">Catégorie</a></li>
+                    <li><a href="#accueil"><ion-icon name="search-outline" style="font-size: 30px;"></ion-icon></a></li>
+                </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text">
+            <div class="text-content">
+                <div class="vers1">
+                    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                </div>
+                <h1>Reflet Brisé</h1>
+                <p>Dans le miroir fracturé, je vois un éclat sombre,</p>
+                <p>Une lumière obscure dans les yeux de l'absence,</p>
+                <p>Le silence résonne, un vacarme dans l'ombre,</p>
+                <p>Écho d'un cœur de verre, criant sa présence.</p>
+                <br>
+                <p>Parmi les ombres, je suis une clarté voilée,</p>
+                <p>Un soleil nocturne dans un ciel sans étoile,</p>
+                <p>La paix tumultueuse dans une mer agitée,</p>
+                <p>Le calme rugissant d'une tempête sans voile.</p>
+                <br>
+                <p>Mes rêves sont des réalités impossibles,</p>
+                <p>Des fantômes vivants dans un monde endormi,</p>
+                <p>Des flammes glaciales, des souvenirs tangibles,</p>
+                <p>Danse de l'oubli dans un esprit épanoui.</p>
+                <br>
+                <p>Chaque sourire est une larme de joie muette,</p>
+                <p>Un bonheur douloureux, une caresse brutale,</p>
+                <p>Je suis la fleur de feu dans une prairie nette,</p>
+                <p>S'épanouissant sous une pluie infernale.</p>
+                <br>
+                <p>Le temps passe comme une éternité brève,</p>
+                <p>Un instant figé dans une course sans fin,</p>
+                <p>Le futur est un passé que le présent achève,</p>
+                <p>Reflet brisé d'un destin incertain.</p>
+                <br>
+                <p>Dans le miroir fracturé, je suis une vérité cachée,</p>
+                <p>Un mensonge éclatant de sincérité pure,</p>
+                <p>Le chaos ordonné d'une âme enchaînée,</p>
+                <p>Cherchant l'harmonie dans la brisure obscure.</p>
+                <br>
+                <p>Que ceux qui regardent voient l'oxymore en moi,</p>
+                <p>La lumière noire, la chaleur glacée,</p>
+                <p>Et comprennent, dans ce reflet de soie,</p>
+                <p>Que la beauté réside dans l'âme fracturée.</p>
+            </div>
+        </div>
+        <div class="image"></div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

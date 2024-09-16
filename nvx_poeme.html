@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /*background-image: url(poemee.png);
+            background-size: cover;*/
+        }
+        .fond {
+            background-image: url('fond145.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s ease-in-out; /* Transition douce entre les images */
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            width: 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        main p, main h1 {
+            margin-top: 50px;
+        }
+        main p {
+            font-style: italic;
+            font-size: 20px;
+        }
+        main h1 {
+            margin-top: 50px;
+            font-size: 2em;
+            opacity: 0;
+            animation: fadeIn 2s forwards, moveIn 2s forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes moveIn {
+            from {
+                transform: scale(0.5);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .footer-link {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: #000;
+        }
+        /*.image img{
+        width: 1540px;
+        }*/
+        .vers{
+            color: antiquewhite;
+            font-style: italic;
+        }
+        .bottom-paragraph {
+            position: absolute;
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            width: 100%;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 20px;
+            color: #000;
+            font-style: oblique;
+            margin-top: 0px;
+        }
+        .bottom-paragraph p {
+            margin: 30px;
+        }
+        .imge img{
+            background-color: palevioletred;
+            border: 1px solid black;
+            float: right;
+            width: 550px;
+            margin-top: 250px;
+            margin-right: 50px;
+        }.bottom{
+            margin-top: 350px;
+            margin-left: 250px;
+        }
+        .bottom a {
+            align-items: center;
+            padding: 5px 20px;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #000;
+            font-size: 18px;
+            transition: 0.3s;
+            display: inline-block;
+            
+        }
+        .bottom h2{
+            margin-top: 50px;
+            margin-left: 250px ;
+        }
+
+        .buttons a:hover {
+            background-color: #1e90ff;
+            color: #000;
+        }
+
+
+
+        .buttons button:hover {
+            background-color: #1e90ff; /* Bleu de mer */
+            color: #000;
+        }
+        #text1{
+            margin-left: 30px;
+            font-style: italic;
+        }
+        #text{
+        margin-left: 30px;
+        text-decoration: none;
+        font-style: italic;
+        }
+        #titre2{
+            margin-left: 30px;
+            text-decoration: none;
+            font-style: italic;
+        }
+        #titre3{
+            margin-left: 30px;
+            text-decoration: none;
+            font-style: italic;
+            
+        }
+
+        #titre3 a {
+            text-decoration: none;
+        }
+        #titre2 a {
+            text-decoration: none;
+            border: 1px solid #000;
+            padding: 5px 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        #titre2 a:hover {
+        background-color: #1e90ff;
+        color: #000;
+    }
+        #text a {
+            text-decoration: none;
+        }
+
+        #img{
+            width: 400px;
+            float: right;
+            margin-left: 200px;
+            border-radius: 60px;
+            /*border-radius: 200px;*/
+        }
+        .bottom-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            /*background-color: burlywood;*/
+        }
+
+        .bottom-section img {
+            width: 450px;
+            /*height: 700px;
+            height: auto;*/
+            /*border: 2px solid #000;*/
+            border-radius: 2px ;
+            margin: 0 50px;
+        }
+
+        .bottom-section .center-text {
+            flex: 1;
+            text-align: center;
+            font-style: italic;
+        }
+        .textcenter h2{
+            text-align: center;
+            font-style: italic;
+        }
+        .center__ p{
+            margin-left: 70px;
+            font-size:16px ;
+            font-style: italic;
+        }
+        .center__ img{
+            width: 450px;
+            border-radius: 2px ;
+            margin: 0 50px;
+            margin-left: 950px;
+            float: right;
+            margin-right: 2px;
+            margin-top: -350px;
+        }
+        #dynamic-text{
+            font-style: italic;
+            margin-left: 70px;
+            margin-top: -35px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .bas h1{
+            text-align: center;
+        }
+        .leh1{
+            text-align: center;
+            margin-left: 150px;
+            font-style: italic;
+        }
+        .bas  p{
+            margin-left: 100px;
+            font-style: italic;
+        }
+        .bas img{
+            margin-left: 150px;
+            float: right;
+            margin-top: -500px
+        }
+        footer p {
+            font-style: italic;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .imge {
+            transform: translateX(100%);
+            animation: slideImage 1s forwards;
+        }
+
+        .bottom {
+            transform: translateX(-100%);
+            animation: slideText 1s forwards;
+        }
+
+        @keyframes slideImage {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideText {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .image_poeme {
+            background-color:#ffcccb;
+        }
+        .bordered {
+            border: 1px solid #000; /* Couleur de la bordure noire */
+            padding: 10px; /* Espacement intérieur pour un meilleur aspect */
+        }
+        table:nth-child(2) {
+            margin-top: 50px; 
+        }
+        .bordered1 {
+            border: 1px solid #000;
+            padding: 10px; 
+            margin-top: 150px;
+        }
+        .bordered2 {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        /*Autre style*/
+        .content-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+            margin-top: 7px;
+        background-image: url(image_bas1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px; /* Espacement entre le texte et l'image */
+    margin-left: 100px;
+}
+
+.text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+.text h2{
+            margin-top: 50px;
+            margin-left: 250px ;
+        }
+
+.image-container1 {
+    flex: 1;
+    text-align: center; /* Centrer l'image horizontalement */
+}
+.text a {
+            align-items: center;
+            padding: 5px 20px;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #000;
+            font-size: 18px;
+            transition: 0.3s;
+            display: inline-block;
+            
+        }
+
+.bordered-image {
+    border: 5px solid #fff; /* Bordure blanche de 5px */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 10px; /* Espacement interne de l'image */
+    max-width: 70%; /* Pour s'assurer que l'image ne dépasse pas de son conteneur */
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    text-align: center;
+}
+
+.image-text h1 {
+    margin-bottom: -10px;
+}
+
+.image-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.image-container:hover .image-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bottom-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            /*background-color: burlywood;*/
+        }
+
+        .bottom-section img {
+            width: 450px;
+            /*height: 700px;
+            height: auto;*/
+            /*border: 2px solid #000;*/
+            border-radius: 2px ;
+            margin: 0 50px;
+        }
+
+        .bottom-section .center-text {
+            flex: 1;
+            text-align: center;
+            font-style: italic;
+        }
+        .textcenter h2{
+            text-align: center;
+            font-style: italic;
+        }
+        .suite {
+            background-color: antiquewhite;
+            height: 390px;
+        }
+        .center__ p{
+            margin-left: 70px;
+            font-size:16px ;
+            font-style: italic;
+        }
+        .suite img{
+            margin-top: 150px;
+            width: 450px;
+            border-radius: 2px ;
+            margin: 0 50px;
+            margin-left: 950px;
+            float: right;
+            margin-right: 50px;
+            margin-top: -300px;
+        }
+        #dynamic-text{
+            font-style: italic;
+            margin-left: 70px;
+            margin-top: -35px;
+        }
+
+        h1 {
+    text-align: center;
+}
+
+.content2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.left2, .right2 {
+    flex: 1;
+    margin: 10px;
+}
+
+.left2 {
+    text-align: left;
+    margin-left: 150px;
+}
+
+.icon-section2 {
+    margin: 20px 0;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.follow-section2 {
+    margin: 20px 0;
+}
+
+.follow-icons2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 150px;
+}
+
+.follow-icons2 ion-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.image-container2 {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container2 img {
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.overlay-text2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90%;
+    width: 85%;
+    opacity: 0;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-container2:hover .overlay-text2 {
+    opacity: 1;
+}
+
+.overlay-text2 p {
+    margin: 5px 0;
+}
+.container_des_liens {
+            position: fixed;
+            z-index: 1;
+            margin-top:-5px;
+            margin-left: 1180px;
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .container_des_liens h2 {
+            margin-top: 0;
+            color: antiquewhite;
+        }
+        .links {
+            margin-top: 10px;
+        }
+        .links p {
+            margin: 5px 0;
+            padding: 0;
+        }
+        .links a {
+            display: block;
+            text-align: left;
+            padding: 8px 0;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            transition: background-color 0.3s ease;
+        }
+        .links a:hover {
+            background-color: #f0f0f0;
+        }
+        .container_des_liens {
+            display: none;
+        }
+        .menu-container_{
+            position: fixed;
+            z-index: 1;
+            margin-top:-5px;
+            margin-left: 1200px;
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        /*Affichage smartphone */
+        @media (max-width: 600px) {
+        .bottom-paragraph {
+        position: relative; 
+        background-color: rgba(128, 128, 128, 0.7); 
+        padding: 10px; 
+        margin-top: 20px; 
+        font-size: 16px; 
+        }
+
+        .bottom-paragraph p {
+            margin: 15px; 
+        }
+
+        .bottom-paragraph ion-icon {
+            font-size: 36px; 
+        }
+    }
+    @media (max-width: 600px) {
+    .content-section {
+        flex-direction: row; /* Empile le texte et l'image verticalement */
+        align-items: center;
+        padding: 10px;
+        height: auto; /* Ajuste la hauteur pour s'adapter au contenu */
+        margin-top: 0;
+    }
+
+    .text {
+        padding-right: 0;
+        margin-left: 0;
+        text-align: center; /* Centrer le texte */
+    }
+
+    .text h1 {
+        font-size: 1.5rem; /* Réduire la taille de la police pour les petits écrans */
+    }
+
+    .text h2 {
+        margin-top: 20px;
+        margin-left: 0;
+        font-size: 1.3rem; /* Réduire la taille de la police pour H2 */
+    }
+
+    .image-container1 {
+        margin-top: 20px; /* Ajoute un espace au-dessus de l'image */
+        width: 100%; /* L'image occupe toute la largeur */
+    }
+
+    .text a {
+        padding: 10px 30px; /* Ajuster le padding du bouton */
+        font-size: 16px; /* Réduire la taille de la police du bouton */
+        margin-left: 10px; /* Espacement entre l'icône de cœur et le lien */
+    }
+
+    .text p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container1 img {
+        width: 400%; /* Ajuster l'image pour occuper toute la largeur disponible */
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-grid {
+        display: grid;
+        grid-template-rows: 1fr; /* Affichage en une seule colonne */
+        gap: 20px; /* Espace entre les images */
+    }
+
+    .image-container {
+        margin-bottom: 20px; /* Espacement entre chaque image */
+    }
+    
+    .image-text {
+        padding: 10px; /* Ajustement du padding pour les petits écrans */
+        font-size: 1rem; /* Taille du texte adaptée pour les petits écrans */
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="fond">
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px; "></ion-icon></h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Accueil</li>
+                <li><a href="nvx-apropos_poeme.html">À propos</a></li>
+                <li><a href="mes_poemes.html">Mes Créations</a></li>
+                <li><a href="nvx_contact_poeme.html">Contact</a></li>
+                <ion-icon name="menu-outline" id="menu-icon" style="font-size: 30px; margin-right: 50px; margin-left: 10px;"></ion-icon>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container_des_liens" id="menu-container">
+        <h2>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h2>
+        <div class="links">
+            <p><a href="poeme_acrostiche.html">Acrostiche</a></p>
+            <p><a href="poeme_amour.html">Amour</a></p>
+            <p><a href="poeme_vie.html">vie</a></p>
+            <p><a href="/liste_poeme_triste.html">Élégie</a></p>
+            <p><a href="....">Odes</a></p>
+            <p><a href="galerie.html">Galerie d'Art</a></p>
+
+        </div>
+    </div>
+
+    <main>
+        <p>Prenez la plume, laissez-la glisser <ion-icon name="pencil" style="font-size: 30px; "></ion-icon></p>
+        <h1>Rends tes pensées étoiles et laisse-les danser sur le papier.</h1>
+        <h2><ion-icon name="fitness-outline" style="font-size: 48px; "></ion-icon></h2>
+        <a href="#" class="footer-link">Découvrir plus</a>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+</section>
+    <div class="bottom-paragraph">
+        <p><ion-icon name="partly-sunny-outline" style="font-size: 48px; color: bisque;"></ion-icon> “Éveille l'encre endormie, rends tes pensées étoiles et laisse-les danser sur le papier, <br>en une valse de mots qui libère l'âme et éclaire les esprits“</p>
+    </div>
+    <br><br><br><br><br><br><br>
+    <section class="content-section">
+        <div class="text">
+            <h2>VersLibérés <ion-icon name="moon" style="font-size: 48px; "></ion-icon></h2>
+            <h1>Exprimez Votre Univers Intérieur</h1>
+            <p>Que vos mots soient les pinceaux avec lesquels vous peignez vos sentiments, <br>ou que vos dessins soient les vers qui racontent vos histoires sans fin,</p>
+            <p>chaque création est un cadeau précieux. Ici, chaque pensée prend vie,<br> chaque émotion trouve sa voix.</p>
+            <br>
+            <p><ion-icon name="heart-circle" style="font-size: 48px; "></ion-icon></p>
+            
+            <a href="#">En savoir plus</a>
+        </div>
+        <div class="image-container1">
+            <img src="poemefond.png" alt="Image" class="bordered-image">
+        </div>
+    </section>
+
+
+    <div class="image-grid">
+        <div class="image-container">
+            <img src="nature.png" alt="Image 1">
+            <div class="image-text">
+                <p>Sur le chemin sinueux, l'aube éveille les brumes,<br>Émergent des arbres, des secrets qui s'allument,<br>Les feuilles caressent le vent, murmurent doucement,</p>
+                <p>Chaque pas révèle un écho, un souffle émouvant.<br>Les fleurs s'épanouissent dans un ballet de couleurs,<br>Le soleil danse à travers les branches, créant des lueurs,<br>Dans ce monde de verdure, de calme et de splendeur,</p>
+                <p>Emportant nos pensées vers des rives créatives.<br>La rivière chante sa mélodie, claire et vive,</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="amour.png" alt="Image 2">
+            <div class="image-text">
+                <p>Sur le sol d'un monde inconnu, loin de l'ancrage parental,<br>J'ai débarqué, égaré, dans un hiver sentimental.<br>La figure austère, telle une sentinelle de givre,<br>Dans son antre de silence, où les cœurs peinent à vivre</p>
+                <p>Étranger sur une terre d'espoir, rejeté par le sang lié,<br>J'ai trouvé un cœur ouvert, un esprit qui m'a adopté.<br>Elle n'est pas du fruit de mes racines, mais elle est mon éden,<br>Une âme sœur trouvée, sur mon chemin, comme ....</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img style="height: 360px;"   src="nvl-rose.png" alt="Image 3">
+            <div class="image-text">
+                <p>Dans le miroir de la nuit, leurs visages fantômes,<br>Me rappellent qu'ils sont là, dans chaque atome.<br>Je travaille, je lutte, même quand la concentration s'évapore,<br>Car dans mon cœur, leur amour est le trésor que je garde.</p>
+                <p>Parfois, je me dis c'est un cauchemar, cette absence,<br>Que je me réveillerai à leurs côtés, en pleine présence.<br>Mais la réalité me rattrape, avec insistance,<br>Je sais qu'ils sont avec moi, malgré la distance.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="triste.png" alt="Image 4">
+            <div class="image-text">
+                <p>Dans l'ombre des jours, là où le silence se cache,<br>L'indifférence s'étend, telle une toile d'araignée fragile.<br>Elle tisse ses fils invisibles, enveloppant les cœurs,<br>Éteignant les étoiles de la compassion.</p>
+                <p>Les mots non dits, comme des oiseaux en cage,<br>Se cognent contre les barreaux de nos lèvres closes.<br>Les regards détournés, les gestes figés,<br>L'indifférence grandit, nourrie par notre silence complice.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-section">
+        <img src="colombe.png" alt="Image gauche">
+        <div class="center-text">
+            <p>L'art de coucher sur le papier les pensées qui nous traversent l'esprit est un voyage intime et révélateur. <br><br>Chaque mot choisi est une touche de couleur sur la toile de notre conscience,<br> chaque phrase une nuance qui donne vie à nos réflexions les plus profondes. <br><br>Écrire, c'est peindre l'invisible, c'est révéler les contours de notre âme avec une honnêteté brute et une beauté sans pareille.</p>
+            <p>Je vous invite à saisir le pinceau des mots, <br>à tremper dans l'encre de vos émotions et à laisser votre cœur guider votre main. </p>
+            <br>
+            <p>Dans le silence de l'écriture résonne la voix de votre âme. </p>
+            <br><br>
+            <p>Écrivez, non pas pour être lu, mais pour être compris <br><ion-icon name="leaf" style="font-size: 30px; "></ion-icon> par vous-même et par l'univers.</p>
+        </div>
+        <img src="plume.png" alt="Image droite">
+    </div>
+<br><br><br><br>
+<section class="suite">
+    <div class="center__">
+        <p class="para">Je vous invite à saisir le pinceau des mots, à tremper dans l'encre de vos émotions et à laisser votre cœur guider votre main. <br><br>Que vos pensées se déversent librement, sans jugement,<br> car chaque mot est un pas vers la compréhension de soi et du monde qui nous entoure. <br>Laissez votre esprit danser sur le rythme des phrases, et peut-être, dans ce miroir de papier, <br>découvrirez-vous un portrait de vous-même que vous n'aviez jamais contemplé auparavant.</p>
+        <p>Prenez la plume ou le clavier,</p>
+        <p>Laissez votre esprit s'envoler.</p>
+        <p>N'ayez crainte de la page blanche.</p>
+        <br><br>
+        <img src="colombe1.png">
+    </div>
+    <div class="leftContent">
+        <h2 id="dynamic-text"> Osez la plume, osez le rêve,  <ion-icon name="heart-half-outline"></ion-icon></h2>
+    </div>
+
+</section>
+
+<div class="lebas">
+    <h1 class="leh1"> <ion-icon name="heart-outline"  style="font-size: 30px; "></ion-icon> Laisser votre esprit vagabonder sur le papier</h1>
+</div>
+
+<div class="content2">
+  <div class="left2">
+    <p>Envoyez-moi un message pour échanger sur la poésie</p>
+    <div class="icon-section2">
+      <div class="icon">
+        <ion-icon name="mail-open-outline" style="font-size: 30px; "></ion-icon>
+        <span>  Email: exemple@domaine.com</span>
+      </div>
+      <div class="icon">
+        <ion-icon name="call-outline" style="font-size: 30px; "></ion-icon> 
+        <span>  Téléphone: +33 1 23 45 67 89</span>
+      </div>
+      <div class="icon">
+        <ion-icon name="location-outline" style="font-size: 30px; "></ion-icon>
+        <span>  Position: 123 Rue Exemple, Paris</span>
+      </div>
+    </div>
+    <div class="follow-section2">
+      <p>Suivez-moi sur :</p>
+      <div class="follow-icons2">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="right2">
+    <div class="image-container2">
+      <img src="rose_bas.png" alt="Image">
+      <div class="overlay-text2">
+        <p>Rose, perle de l'aube,</p>
+        <p>Velours d'un rêve fou,</p>
+        <p>Dans le jardin des songes,</p>
+        <p>Douceur au rendez-vous.</p>
+        <br>
+        <p>Ton parfum, chant céleste,</p>
+        <p>Souffle un murmure clair,</p>
+        <p>Chaque pétale, une fête,</p>
+        <p>Dans l'air, une prière.</p>
+        <br>
+        <p>Éclat de lune rosée,</p>
+        <p>Diamant dans la brume,</p>
+        <p>Ton cœur, doux sanctuaire,</p>
+        <p>Mystère qui se consume.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+    // Tableau des images de fond
+    const backgroundImages = [
+
+        'fond145.png',
+        'fond146.png',
+        'fond147.png',
+        'fond149.png',
+        'fond150.png'
+    ];
+
+    // Indice de l'image actuelle
+    let currentImageIndex = 0;
+
+    // Fonction pour changer l'image de fond
+    function changeBackgroundImage() {
+        const fondSection = document.querySelector('.fond');
+        currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+        fondSection.style.backgroundImage = `url(${backgroundImages[currentImageIndex]})`;
+    }
+
+    // Changer l'image toutes les 5 secondes (5000 millisecondes)
+    setInterval(changeBackgroundImage, 5000);
+
+
+        const dynamicText = document.getElementById('dynamic-text');
+        const texts = ["Laissez parler votre cœur sans trêve.", "Chaque mot est un pas vers l'avant,"," Une trace de soi, éternellement vivant."," Que vos pensées deviennent des cris,", "Des murmures, des chants, des écrits. ","Prenez le risque de vous dévoiler,","De vos mots, faites des clés.","Ouvrez les portes de l'imaginaire,","Prenez la plume, et commencez à tracer."];
+        let index = 0;
+
+        function changeText() {
+            dynamicText.classList.remove('erasing'); // Supprime la classe "erasing"
+            dynamicText.textContent = texts[index];
+            index = (index + 1) % texts.length;
+            setTimeout(eraseText, 3000); // Lance la fonction eraseText après 3 secondes
+        }
+
+        function eraseText() {
+            dynamicText.classList.add('erasing'); // Ajoute la classe "erasing"
+        }
+
+        setInterval(changeText, 5000);
+
+       /* window.onload = function() {
+        alert("Page en cours de création.................");
+    }*/
+    const menuIcon = document.getElementById('menu-icon');
+        const menuContainer = document.getElementById('menu-container');
+        const menuOpenIcon = 'menu-outline';
+        const menuCloseIcon = 'close-outline';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.getElementById('menu-icon');
+            const menuContainer = document.getElementById('menu-container');
+            const menuOpenIcon = 'menu-outline';
+            const menuCloseIcon = 'close-outline';
+
+            menuIcon.addEventListener('click', function() {
+                if (menuContainer.style.display === 'none' || menuContainer.style.display === '') {
+                    menuContainer.style.display = 'block';
+                    menuIcon.name = menuCloseIcon;
+                } else {
+                    menuContainer.style.display = 'none';
+                    menuIcon.name = menuOpenIcon;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: url(ephemere1.png);
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .text {
+            width: 50%; /* Moitié gauche de l'écran */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*background: #f0f0f0; /* Couleur de fond claire pour le texte */
+        }
+
+        .text-content {
+            max-width: 600px;
+            text-align: left;
+            color: #000;
+        }
+        .text-content p {
+            font-style: italic;
+        }
+        .vers1 {
+            color: antiquewhite;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .image {
+            margin-right: -50px;
+            margin-left: 150px;
+            width: 30%; /* Moitié droite de l'écran */
+            /*background-image: url(ephemere.png); 
+            background-size: cover;
+            background-position: center;
+            /*border-left: 2px solid black; /* Bordure gauche */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+                <ul>
+                    <li><a href="nvx_poeme.html">Accueil</a></li>
+                    <li><a href="apropos_poeme.html">À propos</a></li>
+                    <li><a href="nvx_poeme.html"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+                    <li><a href="#">Catégorie</a></li>
+                    <li><a href="#accueil"><ion-icon name="search-outline" style="font-size: 30px;"></ion-icon></a></li>
+                </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text">
+            <div class="text-content">
+                <div class="vers1">
+                    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                </div>
+                <h1>L'Éphémère Réinventé</h1>
+                <p>Sur la scène infinie de l'existence,</p>
+                <p>L'âge n'est qu'un rideau trompeur.</p>
+                <p>La sagesse se tisse non pas en printemps,</p>
+                <p>Mais dans le tissu de l'esprit et de la raison.</p>
+                <br><br>
+                <p>Les géants peuvent être vides de pensée,</p>
+                <p>Perdus dans un brouillard d'ignorance.</p>
+                <p>Les petits peuvent détenir des clés de lumière,</p>
+                <p>Ouvrant des portes sur des mondes de connaissance.</p>
+                <br><br>
+                <p>La vie, tel un fleuve rebelle,</p>
+                <p>Nous défie avec ses courants sauvages.</p>
+                <p>À chaque bifurcation, un destin se dessine,</p>
+                <p>Et nous choisissons, armés de courage et de clairvoyance.</p>
+                <br><br>
+                <p>Les murmures lointains des sages,</p>
+                <p>Sont des phares dans l'obscurité de l'inconnu.</p>
+                <p>Parfois, il faut briser les cartes, inventer des routes,</p>
+                <p>Car l'existence ne promet aucune trajectoire fixe.</p>
+                <br><br>
+                <p>Pourquoi se noyer dans les soucis futurs,</p>
+                <p>Quand l'inéluctable nous attend au tournant ?</p>
+                <p>Le lendemain est un mystère caché,</p>
+                <p>Et l'instant présent est un trésor éphémère.</p>
+                <p>Les rêves de siècles sont des châteaux en nuages,</p>
+                <p>Flottant sur les vagues du temps fugace.</p>
+                <p>Vivons l'instant, équilibristes du quotidien,</p>
+                <p>Balancés entre les rêves et la réalité fugitive.</p>
+                <br><br>
+                <p>Savoure l'instant, car il est d'une valeur inestimable,</p>
+                <p>Tel un joyau éphémère sur le rivage de l'existence.</p>
+                <p>L'ultime voyage ne sonne aucun avertissement,</p>
+                <p>Mais l'Architecte de l'Univers nous a soufflé la vérité.</p>
+                <br><br>
+                <p>N'oublions pas le but de notre voyage,</p>
+                <p>N'oublions pas l'Architecte, notre guide éternel.</p>   
+                <p>La vie est un souffle, le matériel, un mirage,</p>   
+                <p>Dans l'orage des jours, nous dansons avec le temps.</p>
+            </div>
+        </div>
+        <div class="image"></div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

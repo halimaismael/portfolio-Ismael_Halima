@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: url(larme.png); 
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .text {
+            width: 50%; /* Moitié gauche de l'écran */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*background: #f0f0f0; /* Couleur de fond claire pour le texte */
+        }
+
+        .text-content {
+            max-width: 600px;
+            margin-right: -1420px;
+            color: #000;
+        }
+        .text-content p {
+            font-style: italic;
+            color: antiquewhite;
+        }
+        .vers1 {
+            color: antiquewhite;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .image {
+            width: 30%; /* Moitié droite de l'écran */
+            /*background-image: url(etranger.png); 
+            background-size: cover;
+            background-position: center;
+            /*border-left: 2px solid black; /* Bordure gauche */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+                <ul>
+                    <li><a href="nvx_poeme.html">Accueil</a></li>
+                    <li><a href="apropos_poeme.html">À propos</a></li>
+                    <li><a href="nvx_poeme.html"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+                    <li><a href="#">Catégorie</a></li>
+                    <li><a href="#accueil"><ion-icon name="search-outline" style="font-size: 30px;"></ion-icon></a></li>
+                </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text">
+            <div class="text-content">
+                <div class="vers1">
+                    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                </div>
+                <h1>Larmes sur le Chemin de l'Espoir</h1>
+                <p>Dans la nuit profonde, une lueur vacille,</p>
+                <p>Les larmes coulent, témoins silencieux,</p>
+                <p>Chaque goutte tombe, un rêve qui file,</p>
+                <p>Sur le chemin de l'espoir, sinueux.</p>
+                <br>
+                <p>Les pas hésitants, marquent le sol humide,</p>
+                <p>Chaque pierre une épreuve, un défi à surmonter,</p>
+                <p>Le cœur lourd, mais l'âme intrépide,</p>
+                <p>Cherche une lumière, un lieu de paix retrouvé.</p>
+                <br>
+                <p>Les ombres dansent, jouent avec la douleur,</p>
+                <p>Les souvenirs ressurgissent, doux et amers,</p>
+                <p>Un passé qui blesse, mais nourrit le cœur,</p>
+                <p>Dans chaque larme, une force se libère.</p>
+                <br>
+                <p>Le vent murmure des promesses lointaines,</p>
+                <p>De lendemains où brillera l'amour,</p>
+                <p>Chaque larme versée, une peine,</p>
+                <p>Mais aussi une étoile guidant le parcours.</p>
+                <br>
+                <p>Sur le chemin de l'espoir, persévérons,</p>
+                <p>Car au-delà des larmes, se cache la lumière,</p>
+                <p>Dans chaque épreuve, ensemble, nous grandirons,</p>
+                <p>Et trouverons la paix, au bout de cette rivière.</p>
+            </div>
+        </div>
+        <div class="image"></div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

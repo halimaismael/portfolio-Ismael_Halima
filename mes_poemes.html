@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poème</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(image-creation.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            margin-top: 10px;
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 20px; /* Adjust padding as needed */
+            box-sizing: border-box;
+        }
+
+        .left-list, .right-list, .center-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .left-list li a {
+            text-decoration: none;
+        }
+
+        .left-list li, .right-list li, .center-list li {
+            margin: 0 10px; /* Adjust the margin as needed */
+        }
+
+        .right-list li a{
+            color: black;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        ul li a {
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .center-container {
+            text-align: center;
+            margin-top: 20px; /* Adjust margin as needed */
+        }
+
+        .center-list {
+            justify-content: center;
+            margin-top: 10px; /* Adjust margin as needed */
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 50px;
+        }
+
+        .left-td {
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .right-td {
+            margin-left: -880px;
+        }
+
+        /* Styles for the category border */
+        .category-border {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #fff; /* Adjust as needed */
+            border: 1px solid black; /* Adjust border properties as needed */
+            padding: 10px; /* Adjust padding as needed */
+            display: none;
+        }
+        .container_des_liens {
+            position: fixed;
+            z-index: 1;
+            margin-top:-5px;
+            margin-left: 1180px;
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .container_des_liens h2 {
+            margin-top: 0;
+            color: antiquewhite;
+        }
+        .links {
+            margin-top: 10px;
+        }
+        .links p {
+            margin: 5px 0;
+            padding: 0;
+        }
+        .links a {
+            display: block;
+            text-align: left;
+            padding: 8px 0;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            transition: background-color 0.3s ease;
+        }
+        .links a:hover {
+            background-color: #f0f0f0;
+        }
+        .container_des_liens {
+            display: none;
+        }
+        .menu-container_{
+            position: fixed;
+            z-index: 1;
+            margin-top:-5px;
+            margin-left: 1200px;
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .recherche p {
+            margin: 5px 0;
+            padding: 0;
+        }
+        .recherche a {
+            display: block;
+            text-align: left;
+            padding: 8px 0;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            transition: background-color 0.3s ease;
+        }
+        .recherche a:hover {
+            background-color: #f0f0f0;
+        }
+        .menu-container_ {
+            display: none;
+        }
+        .recherche input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.recherche p {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.recherche a {
+    display: block;
+    text-align: left;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.recherche a:hover {
+    background-color: #f0f0f0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="left-list">
+            <li><a href="poeme_tristesse1.html"> mélancolie et nostalgie</a></li>
+            <li><a href="liste_poeme_triste.html"> Élégie</a></li>
+            <li><a href="les_odes.html"> Les odes</a></li>
+            <li><a href="les_fables.html"> Les fables</a></li>
+            <li><a href="les_fables.html"> Les contes</a></li>
+        </ul>
+        <ul class="right-list">
+            <li><a href="#accueil"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+            <!--<li><a href="#accueil" onclick="showCategories()" onblur="hideCategories()">Catégorie</a></li>-->
+            <ion-icon name="menu-outline" id="menu-icon" style="font-size: 30px; margin-right: 50px; margin-left: 10px;"></ion-icon>
+            <ion-icon name="search-outline" id="menu_recherche" style="font-size:30px;"></ion-icon>
+        </ul>
+    </div>
+    <div class="container_des_liens" id="menu-container">
+        <h2>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h2>
+        <div class="links">
+            <p><a href="poeme_acrostiche.html">Acrostiche</a></p>
+            <p><a href="poeme_amour.html">Amour</a></p>
+            <p><a href="poeme_vie.html">vie</a></p>
+            <p><a href="/liste_poeme_triste.html">Élégie</a></p>
+            <p><a href="....">Odes</a></p>
+
+        </div>
+    </div>
+
+    <div class="menu-container_" id="menu-container_">
+        <h2>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h2>
+        <div class="recherche">
+            <input type="text" id="searchInput" placeholder="Rechercher..."><ion-icon name="search-outline" id="menu_recherche" style="font-size:16px;"></ion-icon>
+            <div id="searchResults"></div>
+        </div>
+    </div>
+
+    <div class="center-container">
+        <h1>Poème</h1>
+        <ul class="center-list">
+            <li><a href="poeme_amour.html">Amour</a></li>
+            <li><a href="poeme_acrostiche.html">Acrostiche</a></li>
+            <li><a href="#">Humoristique</a></li>
+            <li><a href="poeme_vie.html">Vie</a></li>
+        </ul>
+    </div>
+    <table>
+        <tr>
+            <td class="left-td">
+                <h2 id="text">L'Éveil des Étoiles</h2>
+                <p id="text"><a href="poeme_Mylife.html">Dans l'arène du destin..</a></p>
+                <h2 id="text">Voyage aux Âmes Perdues</h2>
+                <p id="text"><a href="poeme2.html">Dans le labyrinthe des distances...</a></p>
+                <h2 id="text">Le Jardin des Souvenirs</h2>
+                <p id="text"><a href="poeme3.html">Dans le jardin des souvenirs, où .....</a></p>
+                <h2 id="text">L'Écho du Phénix</h2>
+                <p id="text"><a href="poeme4.html">Dans l'arène du destin..</a></p>
+                <h2 id="text">Le Souffle de l'Aube</h2>
+                <p id="text"><a href="">L'aube se lève doucement, baignant le monde dans une lumière rose et dorée</a></p>
+                <h2 id="text">Les Murmures de la Mer</h2>
+                <p id="text"><a href="">La mer, vaste et mystérieuse, nous appelle à....</a></p>
+            </td>
+            <td>
+                <!-- Category border container -->
+                <div class="category-border" id="category-border">
+                    <!-- Place your categories here -->
+                    <ul>
+                        <li>Nature<br>inspirés par la nature, ses paysages, sa beauté, ses saisons, <br>ses éléments tels que le soleil, la lune, les étoiles, etc</li><br><br>
+                        <li>Vie et mort</li><br><br>
+                        <li>Spiritualité</li><br><br>
+                        <li>Histoire et mémoire</li><br><br>
+                        <li>Société et politique</li><br><br>
+                        <li>Identité et culture</li><br><br>
+                        <li>Art et créativité</li><br><br>
+                        <li>Voyage</li><br><br>
+                        <li>Beauté et esthétique</li><br><br>
+                        <li>Amour</li><br><br>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td class="right-td">
+                <h2 id="text">Les Échos d'un jardin secret</h2>
+                <p id="text"><a href="https://www.youtube.com/watch?v=Iwnu6TTMLlM&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=54">Les échos du passé résonnent à...</a></p>
+                <h2 id="text">Les Promesses du Crépuscule</h2>
+                <p id="text"><a href="https://www.youtube.com/watch?v=Iwnu6TTMLlM&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=54">À l'heure du crépuscule, le ciel..</a></p>
+                <h2 id="text">L'Envol des Papillons</h2>
+                <p id="text"><a href="https://www.youtube.com/watch?v=Iwnu6TTMLlM&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=54">Les papillons dansent...</a></p>
+                <h2 id="text">Le Murmure des Feuilles</h2>
+                <p id="text"><a href="https://www.youtube.com/watch?v=Iwnu6TTMLlM&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=54">Ce langage secret de la nature...</a></p>
+                <h2 id="text">Le Souffle des Souvenirs</h2>
+                <p id="text"><a href="https://www.youtube.com/watch?v=Iwnu6TTMLlM&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=54">Le vent porte avec lui les murmures du passé..</a></p>
+                <h2 id="text">Les Fragments de Cœur</h2>
+                <p id="text"><a href="https://www.youtube.com/watch?v=Iwnu6TTMLlM&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=54">Chaque éclat raconte une histoire de douleur et de rupture</a></p>
+            </td>
+        </tr>
+    </table>
+    
+    <script>
+        // Function to show categories border
+        /*function showCategories() {
+            document.getElementById('category-border').style.display = 'block';
+        }
+
+        // Function to hide categories border
+        function hideCategories() {
+            document.getElementById('category-border').style.display = 'none';
+        }*/
+        const menuIcon = document.getElementById('menu-icon');
+        const menuContainer = document.getElementById('menu-container');
+        const menuOpenIcon = 'menu-outline';
+        const menuCloseIcon = 'close-outline';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.getElementById('menu-icon');
+            const menuContainer = document.getElementById('menu-container');
+            const menuOpenIcon = 'menu-outline';
+            const menuCloseIcon = 'close-outline';
+
+            menuIcon.addEventListener('click', function() {
+                if (menuContainer.style.display === 'none' || menuContainer.style.display === '') {
+                    menuContainer.style.display = 'block';
+                    menuIcon.name = menuCloseIcon;
+                } else {
+                    menuContainer.style.display = 'none';
+                    menuIcon.name = menuOpenIcon;
+                }
+            });
+        });
+
+
+        const menurecherche = document.getElementById('menu_recherche');
+        const menuContainer_ = document.getElementById('menu-container_');
+        const menuOpenIcon_ = 'search-outline';
+        const menuCloseIcon_ = 'close-outline';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menurecherche = document.getElementById('menu_recherche');
+            const menuContainer_ = document.getElementById('menu-container_');
+            const menuOpenIcon_ = 'search-outline';
+            const menuCloseIcon_ = 'close-outline';
+
+            menurecherche.addEventListener('click', function() {
+                if (menuContainer_.style.display === 'none' || menuContainer_.style.display === '') {
+                    menuContainer_.style.display = 'block';
+                    menurecherche.name = menuCloseIcon_;
+                } else {
+                    menuContainer_.style.display = 'none';
+                    menurecherche.name = menuOpenIcon_;
+                }
+            });
+
+            searchInput.addEventListener('input', function() {
+        const searchTerm = searchInput.value.toLowerCase();
+        // Ici vous pouvez mettre la logique pour rechercher et afficher les résultats
+        // Par exemple, vous pouvez filtrer une liste de résultats préexistants ou effectuer une recherche en temps réel
+        // Dans cet exemple, nous allons simplement afficher le terme recherché
+        searchResults.textContent = `Vous recherchez : ${searchTerm}`;
+    });
+        });
+    </script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

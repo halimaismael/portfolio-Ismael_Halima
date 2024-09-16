@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: url(larmedusoir.png); 
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .text {
+            width: 50%; /* Moitié gauche de l'écran */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*background: #f0f0f0; /* Couleur de fond claire pour le texte */
+        }
+
+        .text-content {
+            max-width: 600px;
+            margin-right: -1420px;
+            color: #000;
+        }
+        .text-content p {
+            font-style: italic;
+        }
+        .vers1 {
+            color: antiquewhite;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .image {
+            width: 30%; /* Moitié droite de l'écran */
+            /*background-image: url(etranger.png); 
+            background-size: cover;
+            background-position: center;
+            /*border-left: 2px solid black; /* Bordure gauche */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+                <ul>
+                    <li><a href="nvx_poeme.html">Accueil</a></li>
+                    <li><a href="apropos_poeme.html">À propos</a></li>
+                    <li><a href="nvx_poeme.html"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+                    <li><a href="#">Catégorie</a></li>
+                    <li><a href="#accueil"><ion-icon name="search-outline" style="font-size: 30px;"></ion-icon></a></li>
+                </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text">
+            <div class="text-content">
+                <div class="vers1">
+                    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                </div>
+                <h1>Les Larmes du Soir</h1>
+                <p>Quand le crépuscule embrasse la nuit naissante,</p>
+                <p>Les étoiles veillent, gardiennes silencieuses,</p>
+                <p>Dans le doux murmure du vent, je verse mes larmes,</p>
+                <p>Pensées éparses, rivières silencieuses.</p>
+                <br>
+                <p>Le vieux chêne, solide dans le jardin de mon cœur,</p>
+                <p>Ses racines profondes nourrissant mon être,</p>
+                <p>Son écorce rugueuse, douce étreinte de douceur,</p>
+                <p>Dans mes souvenirs, il est mon refuge secret.</p>
+                <br>
+                <p>La haute montagne, imposante et majestueuse,</p>
+                <p>Son sommet inaccessible, un défi constant,</p>
+                <p>Elle est la force tranquille, la roche précieuse,</p>
+                <p>Dans ses ombres, je trouve un abri réconfortant.</p>
+                <br>
+                <p>Les rivières courantes, libres et sauvages,</p>
+                <p>Leurs eaux vives sculptant le paysage de ma vie,</p>
+                <p>Leur fougue est une tempête, leur rire un mirage,</p>
+                <p>Elles sont les flots qui emportent mes ennuis.</p>
+                <br>
+                <p>L'immense cosmos, un ciel étoilé, un lien invisible,</p>
+                <p>Chaque étoile, une âme, un éclat de tendresse,</p>
+                <p>Le firmament de l'amour, doux et indestructible,</p>
+                <p>Les larmes du soir sont des perles de tristesse.</p>
+                <br>
+                <p>En pensant à eux, le soir devient cascade,</p>
+                <p>Mes larmes, des diamants, étincellent en silence,</p>
+                <p>Leurs souvenirs, des trésors, dans mon cœur en parade,</p>
+                <p>Je pleure des rivières de souvenirs intenses.</p>
+                <br>
+                <p>Que ces larmes du soir, comme un chant mélodieux,</p>
+                <p>Portent mon amour, mon chagrin vers les cieux,</p>
+                <p>Et que dans la nuit, sous les étoiles majestueuses,</p>
+                <p>Je trouve la paix, dans ces larmes précieuses.</p>
+            </div>
+        </div>
+        <div class="image"></div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

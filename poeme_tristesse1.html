@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .text {
+            width: 50%; /* Moitié gauche de l'écran */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*background: #f0f0f0; /* Couleur de fond claire pour le texte */
+        }
+
+        .text-content {
+            max-width: 600px;
+            text-align: left;
+            color: #000;
+        }
+        .text-content p {
+            font-style: italic;
+        }
+        .vers1 {
+            color: antiquewhite;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .image {
+            width: 80%; /* Moitié droite de l'écran */
+            background-image: url(image_triste1.png); 
+            background-size: cover;
+            background-position: center;
+            /*border-left: 2px solid black; /* Bordure gauche */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="nvx_poeme.html">Accueil</a></li>
+                <li><a href="apropos_poeme.html">À propos</a></li>
+                <li><a href="nvx_poeme.html"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+                <li><a href="#">Catégorie</a></li>
+                <li><a href="#accueil"><ion-icon name="search-outline" style="font-size: 30px;"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text">
+            <div class="text-content">
+                <div class="vers1">
+                    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                </div>
+                <h1>Mélodie de l'Ombre</h1>
+                <p>Dans le jardin silencieux de la nuit,</p>
+                <p>Où les étoiles pleurent en éclats d'argent,</p>
+                <p>Mon cœur, en solitude, se languit,</p>
+                <p>Cherchant la lumière d'un rêve émergent.</p>
+                <br><br>
+                <p>Les rivières de tristesse coulent doucement,</p>
+                <p>Emportant les souvenirs, les joies fanées,</p>
+                <p>Comme des pétales de roses au vent,</p>
+                <p>Laissant derrière moi des pages froissées.</p>
+                <br><br>
+                <p>Les échos des rires résonnent en écho,</p>
+                <p>Mais dans le silence, la mélancolie danse,</p>
+                <p>Comme une pluie fine sur un étang calme et froid,</p>
+                <p>Larmes invisibles, émotion intense.</p>
+                <br><br>
+                <p>Les ombres s'étirent, mêlées à mes pensées,</p>
+                <p>Dressant des murailles autour de mon être,</p>
+                <p>Un tableau de regrets, une toile effacée,</p>
+                <p>Où se dessine l'absence, telle une fenêtre.</p>
+                <br><br>
+                <p>Oh tristesse, compagne silencieuse,</p>
+                <p>Toile sombre tissée par le fil du temps,</p>
+                <p>Guide-moi à travers cette nuit ténébreuse,</p>
+                <p>Vers l'aube incertaine, vers l'espoir émouvant.</p>
+                <br><br>
+                <p>Les étoiles murmurent des secrets de l'infini,</p>
+                <p>Et dans la douce obscurité, je m'égare,</p>
+                <p>À la recherche d'un souffle de réconfort,</p>
+                <p>Pour dissiper les ombres qui m'enlacent, me séparent.</p>
+                <br><br>
+                <p>Dans l'éclat d'une larme, la tristesse se révèle,</p>
+                <p>Un poème muet, une mélodie en sourdine,</p>
+                <p>Pourtant, au creux de la nuit, l'étoile la plus belle,</p>
+                <p>Rappelle que même dans l'obscurité, l'amour décline."</p>
+            </div>
+        </div>
+        <div class="image"></div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

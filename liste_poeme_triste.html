@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de mise en page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-style: italic;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            padding: 10px 20px;
+            border: 1px solid black;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .list-container {
+            display: flex;
+            margin: 20px 0;
+            padding: 0 20px;
+            list-style-type: none;
+        }
+
+        .list-container li {
+            margin-right: 20px;
+            font-size: 18px;
+        }
+        ul li a {
+            text-decoration: none;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 10px; /* Réduit l'écart entre les images horizontalement */
+        }
+
+        .image-container div {
+            text-align: center;
+            width: 30%;
+        }
+
+        .image-container img {
+            width: 70%;
+            border-radius: 15px;
+        }
+
+        .image-container .image-description {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .image-description {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        <ul class="list-container">
+            <li><a href="nvx_poeme.html">Accueil</a></li>
+            <li><a href="nvx_poeme.html"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+            <li><a href="#">Catégorie</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="image-container">
+        <div>
+            <img src="reflet_bris.png" alt="Image 1">
+            <p class="image-description">Reflet brisé</p>
+            <p><a href="poeme_triste5.html">Dans le miroir .......</a></p>
+        </div>
+        <div>
+            <img src="image-triste2.png" alt="Image 2">
+            <p class="image-description">L'ombre des racines absentes</p>
+            <p><a href="poeme_triste61.html">Sous un ciel d'échos effacés, je......</a></p>
+        </div>
+        <div>
+            <img src="image_triste3.png" alt="Image 3">
+            <p class="image-description">Le Poids du Silence</p>
+            <p><a href="poeme_triste1.html">Dans la nuit obscure, où l'ombre se terre,</a></p>
+        </div>
+        <div>
+            <img src="image_triste4.png" alt="Image 3">
+            <p class="image-description">Absence Inconsolable</p>
+            <p><a href="poeme_trsite_10.html">Dans le jardin de ma vie, la...</a></p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div>
+            <img src="image_triste5.png" alt="Image 1">
+            <p class="image-description">Larmes sur le Chemin de l'Espoir</p>
+            <p><a href="poeme_trsite9.html">Dans la nuit profonde.....</a></p>
+        </div>
+        <div>
+            <img src="triste1.png" alt="Image 2">
+            <p class="image-description">Échos d'une Tendresse Perdue</p>
+            <p><a href="poeme_triste2.html">Dans le silence de la nuit étoilée,...</a></p>
+        </div>
+        <div>
+            <img src="triste2.png" alt="Image 3">
+            <p class="image-description">Sous le Ciel d'un Autre Toit</p>
+            <p><a href="poeme_triste7.html">Sous le ciel d'un autre toit, je.....</a></p>
+        </div>
+        <div>
+            <img src="triste4.png" alt="Image 3">
+            <p class="image-description">Étrangère parmi les Miens</p>
+            <p><a href="poeme_triste4.html">Sous le voile d'ombre......</a></p>
+        </div>
+    </div>
+    <div class="image-container">
+        <div>
+            <img src="triste3.png" alt="Image 1">
+            <p class="image-description">Le Silence des Liens Oubliés</p>
+            <p><a href="poeme_trsite7.html">Dans l'ombre des jours, là</a></p>
+        </div>
+        <div>
+            <img src="triste5.png" alt="Image 2">
+            <p class="image-description">Les Silences de l'Indifférence</p>
+            <p><a href="poeme_trsiyte8.html">Dans le murmure des ombres, le ...</a></p>
+        </div>
+        <div>
+            <img src="triste6.png" alt="Image 3">
+            <p class="image-description">Les Larmes du Soir</p>
+            <p><a href="poeme_triste6.html">Quand le crépuscule......</a></p>
+        </div>
+        <div>
+            <img src="triste7.png" alt="Image 3">
+            <p class="image-description">Éclats de Cœur en Terre Étrangère</p>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .text {
+            width: 50%; /* Moitié gauche de l'écran */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*background: #f0f0f0; /* Couleur de fond claire pour le texte */
+        }
+
+        .text-content {
+            max-width: 600px;
+            text-align: left;
+            color: #000;
+        }
+        .text-content p {
+            font-style: italic;
+        }
+        .vers1 {
+            color: antiquewhite;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .image {
+            margin-left: 150px;
+            width: 30%; /* Moitié droite de l'écran */
+            background-image: url(poeme3.jpeg); 
+            background-size: cover;
+            background-position: center;
+            /*border-left: 2px solid black; /* Bordure gauche */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+                <ul>
+                    <li><a href="nvx_poeme.html">Accueil</a></li>
+                    <li><a href="apropos_poeme.html">À propos</a></li>
+                    <li><a href="nvx_poeme.html"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+                    <li><a href="#">Catégorie</a></li>
+                    <li><a href="#accueil"><ion-icon name="search-outline" style="font-size: 30px;"></ion-icon></a></li>
+                </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text">
+            <div class="text-content">
+                <div class="vers1">
+                    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                </div>
+                <h1>Voyage aux Âmes Perdues</h1>
+                <p>Dans le labyrinthe des distances, je marche seule, égarée,</p>
+                <p>Cherchant une oasis dans un désert de rêves dorés.</p>
+                <p>Je demeure sous le toit d'une sphinx sans énigme,</p>
+                <p>Qui ne sait pas étreindre, dont le cœur est une épitaphe.</p>
+                <br><br>
+                <p>Elle parle avec les épines d'une rose, des architectes de mon âme,</p>
+                <p>Mais je reste muet, car ma voix serait un feu dans une mer de calme.</p>
+                <p>Je ne peux que rêver en silence, de peur de déclencher l'avalanche,</p>
+                <p>Et de me retrouver seule, face à un horizon sans aucune branche.</p>
+                <br><br>
+                <p>L'étoile du matin, c'est une phare qui jamais ne s'éteint,</p>
+                <p>Une guide dans la nuit, une étreinte qui jamais ne feint.</p>
+                <p>Aucun amour ne peut égaler cette mélodie des cieux,</p>
+                <p>Et c'est dans ce sanctuaire que l'esprit trouve la paix, précieux.</p>
+                <br><br>
+                <p>Chez autrui, nos paroles sont des murmures dans une forêt de pierre,</p>
+                <p>Car c'est seulement en notre demeure que la vérité se libère.</p>
+                <p>Là où chaque mot est un diamant, chaque pensée une aurore,</p>
+                <p>Là où l'étoile du matin est un soleil qui jamais ne dort.</p>
+                <br><br>
+                <p>Je suis une navigatrice des rêves, cherchant ma place sous les cieux,</p>
+                <p>Dans l'espoir qu'un jour, je trouverai un havre où tout est merveilleux.</p>
+                <p>Car même à des milliers de kilomètres, mon cœur aspire à l'aube,</p>
+                <p>Où je pourrai enfin trouver repos, dans l'étreinte de ma véritable alcôve.</p>
+            </div>
+        </div>
+        <div class="image"></div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

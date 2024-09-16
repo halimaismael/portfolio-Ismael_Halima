@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .text {
+            width: 50%; /* Moitié gauche de l'écran */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*background: #f0f0f0; /* Couleur de fond claire pour le texte */
+        }
+
+        .text-content {
+            max-width: 600px;
+            text-align: left;
+            color: #000;
+        }
+        .text-content p {
+            font-style: italic;
+        }
+        .vers1 {
+            color: antiquewhite;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .image {
+            width: 80%; /* Moitié droite de l'écran */
+            background-image: url('fond_pome_life.png'); 
+            background-size: cover;
+            background-position: center;
+            /*border-left: 2px solid black; /* Bordure gauche */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="nvx_poeme.html">Accueil</a></li>
+                <li><a href="apropos_poeme.html">À propos</a></li>
+                <li><a href="nvx_poeme.html"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+                <li><a href="#">Catégorie</a></li>
+                <li><a href="#accueil"><ion-icon name="search-outline" style="font-size: 30px;"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text">
+            <div class="text-content">
+                <div class="vers1">
+                    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                </div>
+                <h1>L'Éveil des Étoiles</h1>
+                <p>Dans l'arène du destin, je suis une gladiatrice,</p>
+                <p>Affrontant des chimères, loin des pleurs.</p>
+                <p>Chaque rêve est un sphinx que je dois énigmer,</p>
+                <p>Pour que mes actes puissent enfin proclamer.</p>
+                <br><br>
+                <p>Les secondes s'écoulent, grains d'un sablier ancien,</p>
+                <p>Dans le labyrinthe du temps, un voyage sans fin.</p>
+                <p>Mais ma volonté est un obélisque éternel,</p>
+                <p>Face aux vents du temps, un pilier fraternel.</p>
+                <br><br>
+                <p>Je bâtirai un temple pour les veilleurs silencieux,</p>
+                <p>Avec la pierre de ma persévérance, sous les cieux.</p>
+                <p>Les sentinelles de mon sang, des astres dans la nuit,</p>
+                <p>Pour eux, je conquerrai des univers, sans bruit.</p>
+                <br><br>
+                <p>Chaque tic-tac est un titan foulant un millénaire,</p>
+                <p>Mais mon esprit est un phénix, dans l'air.</p>
+                <p>Je suis le maître-artisan de mon destin,</p>
+                <p>Et à l'aube, je dévoilerai mon chef-d'œuvre divin.</p>
+            </div>
+        </div>
+        <div class="image"></div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

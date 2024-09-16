@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .text {
+            width: 50%; /* Moitié gauche de l'écran */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*background: #f0f0f0; /* Couleur de fond claire pour le texte */
+        }
+
+        .text-content {
+            max-width: 600px;
+            text-align: left;
+            color: #000;
+        }
+        .text-content p {
+            font-style: italic;
+        }
+        .vers1 {
+            color: antiquewhite;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .image {
+            width: 80%; /* Moitié droite de l'écran */
+            background-image: url(berceuse.png); 
+            background-size: cover;
+            background-position: center;
+            /*border-left: 2px solid black; /* Bordure gauche */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="nvx_poeme.html">Accueil</a></li>
+                <li><a href="apropos_poeme.html">À propos</a></li>
+                <li><a href="nvx_poeme.html"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+                <li><a href="#">Catégorie</a></li>
+                <li><a href="#accueil"><ion-icon name="search-outline" style="font-size: 30px;"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text">
+            <div class="text-content">
+                <div class="vers1">
+                    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                </div>
+                <h1>La Berceuse des Étoiles</h1>
+                <p>La nuit, les étoiles s'éveillent en silence,</p>
+                <p>Dans leur berceau céleste, elles dansent.</p>
+                <p>Leur lumière douce, telle une caresse,</p>
+                <p>Éclaire nos rêves, notre tendre détresse.</p>
+                <br><br>
+                <p>Chaque étoile est un secret gardien du ciel,</p>
+                <p>Un poème écrit en lettres d'argent et de miel.</p>
+                <p>Elles murmurent des histoires d'un autre temps,</p>
+                <p>Des légendes tissées par les vents.</p>
+                <br><br>
+                <p>La Grande Ourse berce la Petite Ourse endormie,</p>
+                <p>Comme une mère veillant sur son petit.</p>
+                <p>Orion, fier chasseur, brandit son épée,</p>
+                <p>Protégeant les constellations enlacées.</p>
+                <br><br>
+                <p>Vénus, l'étoile du soir, brille d'un éclat pur,</p>
+                <p>Comme un diamant suspendu dans l'azur.</p>
+                <p>Et la Lune, douce compagne des nuits,</p>
+                <p>Verse sa lumière comme un doux breuvage interdit.</p>
+                <br><br>
+                <p>Les étoiles chantent leur chanson silencieuse,</p>
+                <p>Un murmure d'éternité, une mélodie précieuse.</p>
+                <p>Elles bercent nos espoirs, nos peines, nos vies,</p>
+                <p>Guidant nos pas vers l'infini.</p>
+            </div>
+        </div>
+        <div class="image"></div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

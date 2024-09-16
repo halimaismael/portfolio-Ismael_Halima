@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: url(image_fable2.png); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .text {
+            width: 50%; /* Moitié gauche de l'écran */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*background: #f0f0f0; /* Couleur de fond claire pour le texte */
+        }
+
+        .text-content {
+            max-width: 600px;
+            text-align: left;
+            color: #000;
+        }
+        .text-content p {
+            font-style: italic;
+        }
+        .vers1 {
+            color: antiquewhite;
+            font-style: italic;
+            text-align: center;
+        }
+
+        /*.image {
+            margin-left: 10px;
+            width: 50%; /* Moitié droite de l'écran */
+            /*background-image: url(image_fable.png); 
+            background-size: cover;
+            background-position: center;
+            /*border-left: 2px solid black; /* Bordure gauche */
+        /*}*/
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="nvx_poeme.html">Accueil</a></li>
+                <li><a href="apropos_poeme.html">À propos</a></li>
+                <li><a href="nvx_poeme.html"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+                <li><a href="#">Catégorie</a></li>
+                <li><a href="#accueil"><ion-icon name="search-outline" style="font-size: 30px;"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text">
+            <div class="text-content">
+                <div class="vers1">
+                    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                </div>
+                <h1>La Cigale et le Papillon</h1>
+                <p>Dans un champ fleuri, sous le soleil d'été,</p>
+                <p>Une cigale chantait, pleine de gaieté.</p>
+                <p>Elle attirait l'attention de tous les passants,</p>
+                <p>Avec sa mélodie, joyeuse et dansante.</p>
+                <br><br>
+                <p>Un papillon, aux ailes de velours,</p>
+                <p>Fut charmé par sa chanson d'amour.</p>
+                <p>Il voleta vers elle, léger et gracieux,</p>
+                <p>Lui faisant la cour, espérant être heureux.</p>
+                <br><br>
+                <p>"Chère cigale, ton chant réchauffe mon cœur,</p>
+                <p>Je t'offre mon amour, sans peur ni erreur.</p>
+                <p>Ensemble, nous pourrions danser dans les airs,</p>
+                <p>Partager nos jours, loin des solitudes amères."</p>
+                <br><br>
+                <p>Mais la cigale, sage et bien avisée,</p>
+                <p>Connaissait les pièges de la vanité.</p>
+                <p>"Cher papillon, je suis flattée, vraiment,</p>
+                <p>Mais mon chant est pour tous, librement.</p>
+                <br><br>
+                <p>Je ne cherche pas l'amour, ni la cour,</p>
+                <p>Je vis pour l'art, chaque jour.</p>
+                <p>Mon cœur est dans ma musique, mon âme dans le vent,</p>
+                <p>Je ne peux t'offrir ce que tu attends."</p>
+                <br><br>
+                <p>Le papillon comprit la leçon donnée,</p>
+                <p>Et sans rancœur, il s'est éloigné.</p>
+                <p>Il apprit qu'on ne peut forcer l'affection,</p>
+                <p>Ni changer les cœurs par pure intention.</p>
+                <br><br>
+                <p>Morale : L'amour ne se commande pas,</p>
+                <p>Il naît et grandit sans éclat.</p>
+                <p>Respectons les sentiments de chacun,</p>
+                <p>Car le cœur a ses raisons, que la raison ne connaît point.</p>
+        </div>
+        <div class="image"></div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

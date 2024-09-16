@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: url(image3.1.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .text {
+            width: 50%; /* Moitié gauche de l'écran */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*background: #f0f0f0; /* Couleur de fond claire pour le texte */
+        }
+
+        .text-content {
+            max-width: 600px;
+            text-align: left;
+            color: #000;
+        }
+        .text-content p {
+            font-style: italic;
+        }
+        .vers1 {
+            color: antiquewhite;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .image {
+            /*margin-left: 250px;
+            width: 100%; /* Moitié droite de l'écran */
+            /*background-image: url(image3.1.png); 
+            background-size: cover;
+            background-position: center;
+            /*border-left: 2px solid black; /* Bordure gauche */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="nvx_poeme.html">Accueil</a></li>
+                <li><a href="apropos_poeme.html">À propos</a></li>
+                <li><a href="nvx_poeme.html"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+                <li><a href="#">Catégorie</a></li>
+                <li><a href="#accueil"><ion-icon name="search-outline" style="font-size: 30px;"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text">
+            <div class="text-content">
+                <div class="vers1">
+                    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                </div>
+                <h1>Le Jardin des Souvenirs</h1>
+                <p>Dans le jardin des souvenirs, où fleurissent les échos du passé,</p>
+                <p>Je me promène, cueillant les moments avec les architectes de mon être.</p>
+                <p>Les rires des compagnons d'enfance, tels des papillons, virevoltent,</p>
+                <p>Et les étoiles de ma vie, douce et brillant, illumine chaque pensée.</p>
+                <br><br>
+                <p>Je me rappelle sans cesse, comme un refrain, leur présence,</p>
+                <p>Chaque souvenir est une feuille qui tombe, une douce cadence.</p>
+                <p>La douleur pèse lourd, tel un fruit mûr sur la branche,</p>
+                <p>Mais dans ce jardin, chaque mémoire est une fleur qui se penche.</p>
+                <br><br>
+                <p>Les voix du sang, sont des ruisseaux chantants,</p>
+                <p>Leurs éclats de joie résonnent, comme des cloches dans le vent.</p>
+                <p>Et l'étoile de ma vie, mon âme sœur, me guide,</p>
+                <p>Dans ce jardin des souvenirs, où chaque instant est un prélude.</p>
+                <br><br>
+                <p>Mais le jardin se teinte parfois d'ombres, et la mélancolie s'invite,</p>
+                <p>Comme un voile sur le cœur, une brume qui doucement habite.</p>
+                <p>Je me rappelle d'eux sans arrêt, et la douleur, tel un orage,</p>
+                <p>Éclate en moi, mais laisse place à l'espoir, à chaque passage.</p>
+                <br><br>
+                <p>Car dans le jardin des souvenirs, malgré la distance et le temps,,</p>
+                <p>Les souvenirs restent vivants, comme des fleurs résistant au vent.</p>
+                <p>Au fond de moi, des liens qui ne seront jamais rompus,</p>
+                <p>Car ils sont le terreau de mon âme, l'essence de ce que j'ai vécu.</p>
+            </div>
+        </div>
+        <div class="image"></div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

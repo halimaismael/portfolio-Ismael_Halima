@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /*background-image: url(poemee.png);
+            background-size: cover;*/
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            width: 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .image img {
+            border-radius: 15px;
+            float: left;
+            margin-left: -150px;
+        }
+        .image2 img {
+            border-radius: 15px;
+            float: right;
+            margin-left: 250px;
+        }
+
+        .form-section {
+            margin-left: 250px;
+            margin-right: 10px;
+            max-width: 500px;
+        }
+        .form-section p {
+            font-style: oblique;
+            text-align: left; /* Align text to the left */
+            width: 450px; /* Make the width of the <p> match the width of the input */
+            margin: 0 0 5px 0; /* Add some space below each <p> */
+        }
+
+        .form-section h1 {
+            text-align: center;
+        }
+
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align form fields horizontally */
+        }
+
+        .form-section form input , 
+        .form-section form textarea {
+             /* Adjusted width to 90% */
+            width: 450px; /* Ensure it doesn't exceed the form-section width */
+            margin-bottom: 20px;
+            padding: 15px; /* Increased padding for larger input fields */
+            border: 1px solid #000;
+        }
+
+        .form-section form button {
+            
+            background-color: #1e90ff; /* Bleu de mer */
+            color: white;
+            border: none;
+            font-size: 15px;
+            padding: 5px 20px;
+            text-decoration: none;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        .form-section form button:hover {
+            background-color: #0073e6; /* Bleu plus foncé */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px; "></ion-icon></h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Accueil</li>
+                <li>À propos</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image">
+            <img src="fleur1.png" alt="Image de fleur">
+        </div>
+        <div class="form-section">
+            <p>Entrez en Contact</p>
+            <h1>Nous contacter</h1>
+            <form>
+                <p>Nom : </p>
+                <input type="text" name="nom" placeholder="Halima" required>
+                <p>Mail : </p>
+                <input type="email" name="email" placeholder="exemple@gmail.com" required>
+                <p>Message :</p>
+                <textarea name="message" placeholder="Votre message içi" rows="5" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        <div class="image2">
+            <img src="fleur2.png" alt="Image de fleur">
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

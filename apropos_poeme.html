@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            text-align: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .vers {
+            color: antiquewhite;
+            font-style: italic;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .image {
+            width: 50%; /* Un quart de l'écran */
+            background-image: url(aprpr.jpeg); /* Remplacez par le chemin de votre image */
+            background-size: cover;
+            background-position: center;
+            border-right: 2px solid black; /* Bordure droite */
+        }
+
+        .text {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text-content {
+            max-width: 600px;
+            text-align: left;
+            color: #000;
+        }
+        .text-content p{
+            font-style: italic;
+        }
+        .vers1 {
+            color: antiquewhite;
+            font-style: italic;
+            text-align: center;
+        }
+        .footer-image img{
+            float: right;
+            margin-right: 200px;
+            width: 250px;
+            /*width: 100%;
+            /*height: 200px; /* Ajustez la hauteur de l'image selon vos besoins */
+            /*background-image: url(fleurfond.png); /* Remplacez par le chemin de votre image */
+            /*background-size: cover;
+            /*background-position: center;*/
+        }
+        .footer-image p{
+            margin-left: 150px;
+            margin-left: -250px;
+        }
+        .bottom-right{
+            /*background: grey;*/
+            border-style: none;
+            margin-right: 10px;
+            padding: 5px 20px;
+            font-size: 18px;
+        
+        }
+        .bottom-right a{
+            border: 1px solid gray;
+            text-decoration: none;
+            padding: 5px 20px;
+            font-size: 18px;
+            margin-left: 1050px;
+            margin-top: -350px;
+        }
+        .botom{
+            margin-top: -550px;
+            margin-left: 20px;
+        }
+        .botom p{
+            font-style: italic;
+            margin-left: 250px;
+        }
+        .fond {
+            background-image: url(fond15.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <section class="fond">
+    <header>
+        <div class="vers">
+            <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="nvx_poeme.html">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="contact_poeme.html">Contact</a></li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+    </header>
+    
+        <h1 class="title" style="text-align: center; color: aliceblue; font-size: 48px; font-style: italic;">A propos</h1>
+        <br><br><br><br><br><br><br><br>
+    </section>
+    <div class="content">
+        <div class="image"></div>
+        <div class="text">
+            <div class="text-content">
+                <div class="vers1">
+                    <h1>VersLibérés <ion-icon name="moon" style="font-size: 48px;"></ion-icon></h1>
+                </div>
+                <h1>Maliha Elisam</h1>
+                <p>À l'aube de ma maturité, je me lance dans l'aventure,</p>
+                <p>Diplomée d'un Bac S, Étudiante en BTS SIO SLAM, je trace ma propre structure.</p>
+                <p>Dans les méandres de mon esprit, une encre noire s'éveille,</p>
+                <p>Sur ce site de poèmes, je libère ce qui sommeille.</p>
+                <br><br>
+                <p>Ce n'est pas juste un passe-temps, c'est une quête, un besoin,</p>
+                <p>Chaque vers, chaque rime, allège mon cœur de son poids.</p>
+                <p>Je vous invite à naviguer dans les flots de ma pensée,</p>
+                <p>À découvrir les trésors cachés, les perles de ma sensibilité.</p>
+                <br><br>
+                <p>Je suis jeune, mais mes mots sont anciens, empreints de vérité,</p>
+                <p>Ils résonnent avec force, dans l'écho de la modernité.</p>
+                <p>Ce site est mon phare dans la nuit, mon refuge, ma liberté,</p>
+                <p>Un endroit où l'ancre de mon âme peut enfin s'ancrer.</p>
+                <br><br>
+                <p>Alors, prenez un moment, laissez-vous emporter,</p>
+                <p>Par les vagues de mes écrits, laissez votre esprit vagabonder.</p>
+                <p>Car c'est ici que commence notre voyage immortel,</p>
+                <p>Dans l'univers de la poésie, où chaque mot est une étincelle.</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="footer-image">
+        <img src="fleur2.png">
+    </div>
+    <div class="botom">
+        <!--<div class="bottom-right">
+            <a href="contact_poeme.html">Contactez-moi</a>
+        </div>-->
+        <p>N'hésitez pas à franchir le seuil de ce havre poétique,</p>
+        <p>Où les mots sont des navires, et les pensées, l'Atlantique.</p>
+        <p>Si l'encre de votre esprit est prête à couler sur le papier,</p>
+        <p>Venez, discutons ensemble de l'art de naviguer.</p>
+        <br>
+        <p>Je suis jeune, avec un rêve,</p>
+        <p>J'ai créé ce site pour libérer l'ancre qui en moi s'élève.</p>
+        <p>Et je vous dis : "Vous aussi, vous pouvez lever l'ancre,</p>
+        <p>Ne minimisez pas votre voix, elle mérite d'être franche."</p>
+        <br>
+        <p>Ce site est un phare pour les cœurs en quête de lumière,</p>
+        <p>Un appel à tous, pour que jamais ne se tarisse la rivière</p>
+        <p>De nos inspirations, de nos espoirs, de nos rêves partagés,</p>
+        <p>Ici, votre courage de créer ne sera jamais minimisé.</p>
+        <br>
+        <p>Alors, venez, écrivains de l'ombre ou de la lumière,</p>
+        <p>Votre contribution est précieuse, nécessaire.</p>
+        <p>Ensemble, faisons de ce site un jardin florissant,</p>
+        <p>Où chaque fleur de mot peut s'épanouir librement.</p>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
